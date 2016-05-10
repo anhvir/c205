@@ -124,8 +124,8 @@ void createStaffList( staffList_t *psl ) {
 		fullName_t *pn= &ps->name;   /*    for covenience !      */
 		date_t *pd= &ps->start;
 		if ( scanf("%s %s %d %d/%d/%d %d", 
-		           pn->given, pn->family, &ps->id, 
-							 &pd->dd, &pd->mm, &pd->yy, &ps->salary) != 7) {
+		           given, family, &id, 
+							 &dd, &mm, &yy, &salary) != 7) {
 			break;
 			        /* note that if we haven't use pd (for example) we have
 							   to write &psl->ss[i].start.mm
@@ -162,17 +162,5 @@ void swap(staff_t *a, staff_t *b) {
 */
 void sortStaffList( staffList_t *psl) {
 	int n= psl->n;         /* for convenience, n= number of staff */
-	staff_t *a= psl->ss;
-	int i, j;
-	for (i=n-1; i>0; i--) {
-	  /* processing elements from a[0] to a[i] only */
-		int imax= 0;
-		for (j=1; j<=i; j++) {    /* find imax= index of largest id  */
-			if ( a[imax].id < a[j].id ) imax= j;
-		}
-
-    /* swap the largest element with the last element of a[0] to a[i] */
-		swap( &a[i], &a[imax]);   
-	}
 }
 
