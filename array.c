@@ -1,77 +1,93 @@
 /*    
-	Purpose : using array (with random values) 
+	Purpose : using arrays of integers 
+			  (note: incremental development!!!)
    
-	Skeleton by: Anh Vo, anhvir@gmail.com, 05 Apr 2017
-	Finished by:
+	Started by: Anh Vo, anhvir@gmail.com, 10 Apr 2017
+	Finished by: 
 
-	Instructions:
-		- compile and try the program
-		- implement points ****1**** and *****2*****  
-		- implement point ****3**** if you can
 */
 
 #include <stdio.h>
 #include <stdlib.h>
 
-#define N 10
+#define MAX_N 1000		/* maximal array size */ 
 
-void buildArray(int a[], int n); 
-void printArray(char *title, int *a, int n);
-int sum(int a[], int n); 
+int readArray(int a[]); 
+void printArray(char *title, int a[], int n);
+int all_zero(int a[], int n);
+void ins_sort(int a[], int n);
 
 int
 main(int argc, char *argv[]) {
-	int a[N];
+	int n=0;			/* current number of elements in array */
+	int a[MAX_N];
 
-	buildArray(a, N);
-	printArray("Original array", a, N);
-
-	/* ****1**** */
-    /* squareArray(a, N); */    
-    /* YOU HAVE TO WRITE function squareArray
-		that chang each element of array to
-		its squared value, and call it here   */
-	printArray("New array", a, N);
-
-    printf("sum of array elements= %d\n", sum(a, N));
-
-	/* ****2**** */
-	/* printf("sum of even elements of array= %d\n", sumEven(A, n); */
-	/* YOU HAVE TO WRITE function sumEven that returns the sum of 
-		the elements which are even */
+	n= readArray(a);
+	printArray("Original array", a, n);
 	
-	/* ****3****: write and call a function to sort the array
-					in increasing order  */ 
+	if (all_zero(a,n)) {
+		printf("all elements are zero\n");
+	} else {
+		printf("not all elements are zero\n");
+	}
+
+	ins_sort(a,n);
+	printArray("Sorted array", a, n);
 
 	return 0;
 }
 
-/* fill in array a[n] with random values from 1 to 20 
-   (note the way array name a and value n are declared in function header)
+/* reads array from stdin  
+   returns the number of elements in the array
 */ 
-void buildArray(int a[], int n) {  
+int readArray(int a[]) {  
 	int i;
-	for (i=0; i<n; i++) {
-		a[i]= rand()%20 + 1;  /* rand() returns a random integer */ 
-	}
+	for (i=0; scanf("%d", &a[i])==1; i++);
+	return i;
 }
 
 
-/* print out the array after printing a title,
-   Note that here "int *a" is another way for writing "int a[]"
+/* print out the array a[n] after printing a title
 */  
-void printArray(char *title, int *a, int n) {
+void printArray(char *title, int a[], int n) {
 	int i;
-	printf("%s: ", title);
+	printf("%s:\n", title);
 	for (i=0; i<n; i++) printf ("%3d", a[i]);
 	printf("\n\n");
 }
 
-/* returns sum od elements of arrays a */
-int sum(int a[], int n) {
-	int i, sum=0;
-	for (i=0; i<n; i++) {
-		sum += a[i];
+/* returns 1 if all elements of array a[n] are zero,
+           0 otherwise
+*/
+int all_zero(int a[], int n){
+	return 1;
+}
+
+void swap(int *a, int *b) {
+	int t= *a;
+	*a= *b;
+	*b= t;
+}
+
+/* sorting elements of a[] in increasing order
+   using insertion sort    
+*/	
+void ins_sort(int a[], int n){
+	int i, j;
+	for (i=1; i<n; i++) { 
+		 /* insert a[i] to a[0..i-1] */
+		for (j=i-1; j>=0 && a[j] > a[j+1]; j--) {
+			swap( &a[j+1], &a[j] );
+		}
+
+		/* printing interim results */
+		/*
+		printf ("Step %2d: ",i);
+		for (j=0; j<=i; j++) printf(" %2d", a[j]);
+		printf("  ||  ");
+		for (   ; j<n; j++) printf(" %2d", a[j]);
+		printf("\n");
+		*/
+
 	}
-	return sum;
 }
