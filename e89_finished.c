@@ -1,5 +1,10 @@
 /*  Author: COMP20005 Class
 		Date: May 2017
+
+	SORRY, this one is not a finished version as it name suggests
+			I just add some more comments in comparison with e89.c
+			you need to finish it by yourself
+
 	Demonstrating:
 	A) nested strucs and arrays, in particular:
 		- array of structs
@@ -120,15 +125,9 @@ main(int argc, char *argv[]) {
 void createStaffList( staffList_t *psl ) {
 	int i;
 	for (i=0; 
-		i<N_MAX && 
-		scanf("%s %s %d %d", psl->ss[i].name.given,   /* given name of i-th staff */
-							 psl->ss[i].name.family,
-							 &(psl->ss[i].id), 
-							 &(psl->ss[i].salary)      /* salary of i-th staff */
-		) == 4;
+		i<N_MAX && 1 /* Replace 1 by your scanf  */ ;
 		i++) {               /* empty loop body, can be just replaced with ; */
 	}
-	psl->n= i;			/* i now is number of staffs, we HAVE TO store it in psl->n */
 }
 
 
@@ -152,9 +151,8 @@ void printStaffList( staffList_t *psl, char *title ) {
 	printf("Given & Family Names   ID   Salary\n");
 	printf("--------------------  ----  ------\n");
 	/* then, wlks thru the array psl->ss[] and print staff by staff ------  */
-	for (i=0; i<psl->n; i++ ) {
-		printStaff( &psl->ss[i] );
-	}
+	printf("printing NOT YET implemented \n");
+    
 	printf("\n");
 }
 
@@ -162,24 +160,13 @@ void printStaffList( staffList_t *psl, char *title ) {
 /***********************  PART 4: SORTING ************************/
 
 void swap(staff_t *a, staff_t *b) {
-	staff_t tmp= *a;
-	*a= *b;
-	*b= tmp;
+	printf("swap NOT YET implemented \n");
 }
 
 /* sort the array psl->ss[] in increasing order of id,
    using insertion sort 
 */
 void sortStaffList( staffList_t *psl) {
-	int n= psl->n;         /* for convenience, n= number of staff */
-	staff_t *a= psl->ss;
-	int i, j;
-	for (i=1; i<n; i++) {
-		/* insert a[i] into sorted a[0..i-1] so that a[0..i] becomes sorted */
-		for (j=i-1; j>=0 && a[j+1].id < a[j].id; j--) { 
-			/* here, a[j] and a[j+1] in wrong order, swap them!  */
-			swap( &a[j], &a[j+1]);
-		}
-	}
+	printf("sorting NOT YET implemented \n");
 }
 
