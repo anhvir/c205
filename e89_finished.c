@@ -1,15 +1,23 @@
 /*  Author: COMP20005 Class
-		Date: 09/05/2016
-    Demonstrating:
-   		Nested structures & array of struct.
-			Sorting.
-		Based on Exercise 8.9
-		Supposing that input data in the format:
-		   givenname firstname staffID dd/mm/yy salary
+		Date: May 2017
+	Demonstrating:
+	A) nested strucs and arrays, in particular:
+		- array of structs
+   		- struct with arrays as components
+   		- struct with structs as components
+    B) Sorting arrays of structs
+		
+	NOTES: Based on Exercise 8.9, with a bit of change:
+	A) Supposing that input data dexribing statt in the format:
+		givenname surname staffID salary
+		(attention: only one single word for givenname,
+					one single word for surname
+					date of birth (required by e8.9) was skipped) )
+	B) Struct with arrays as componenst is implemented here,
+		but is not actually required for Ex 8.9 
 
-
-		QUESTIONS? You can send question about this progrm to:
-		    anhvir@gmail.com
+	QUESTIONS? You can send question about this progrm to:
+		anhvir@gmail.com
 
 		with subject: COMP20005 question.
 		
@@ -24,13 +32,13 @@
 
 #define NAME_LEN_MAX 40
 
-#define N_MAX 100
+#define N_MAX 1000
 
 
 
 typedef struct {
-  char given[NAME_LEN_MAX];
-	char family[NAME_LEN_MAX];
+  	char given[NAME_LEN_MAX + 1];
+	char family[NAME_LEN_MAX + 1];
 } fullName_t;
 /* example: if we declare:
  
@@ -57,107 +65,102 @@ typedef struct {
 
 
 
-typedef struct {
-	int dd, mm, yy;
-} date_t;
 
 typedef struct {
 	fullName_t name;
 	int id;				     /* staff number */
-	date_t start;      /* date of commencement */
 	int salary;        /* annual salary (AUD)  */
 } staff_t;
 /* staff_t is a data type; each staff_t variable (say named st) has 4 components:
     st.name              which is struct of type fullName_t
-		  st.name.given      which is a string, representing gibven name
-		  st.name.family     which is a string, representing family name
-		st.id                int number, representing staff ID
-    st.start             which is a struct of type date_t 
-      st.start.dd        int number, representing day
-      st.start.mm        int number, representing month
-      st.start.yy        int number, representing year
+		st.name.given      which is a string, representing gibven name
+		st.name.family     which is a string, representing family name
+	st.id                int number, representing staff ID
     st.salary            int number, representing salary
 */
 
 
 /* datatype for a list of staff ----------------- */
 typedef struct {
-	int n;              			/* number of staffs */
-	staff_t ss[N_MAX];        /* array of staff   */
+	int n;              /* number of staffs */
+	staff_t ss[N_MAX];  /* array of staff   */
 } staffList_t;
 
+/* staffList_t object is a struct that has a array as a component,
+   that array, in its turn, is an array of structs
+*/
 
-void printStaff(staff_t *ps); 
 void createStaffList( staffList_t *psl );
 void printStaffList( staffList_t *psl, char *title );
 void sortStaffList( staffList_t *psl);
-void swap(staff_t *a, staff_t *b); 
 
 int
 main(int argc, char *argv[]) {
- 	staffList_t myStaff;
+	staffList_t myStaff;
 
-  /* 1 ---------- creates the staff list myStaff */ 
+	/* 1 ---------- creates the staff list myStaff */ 
 	createStaffList( &myStaff );
 	
 	/* 2 ---------- print the staff list myStaff   */
 	printStaffList( &myStaff, "ORIGINAL STAFF LIST" );
  
-  /* 3 ---------- sorts the staff list           */ 
+	/* 3 ---------- sorts the staff list           */ 
 	sortStaffList( &myStaff );
 
-	/* 2 ---------- print the staff list again, after sorting   */
+	/* 4 ---------- print the staff list again, after sorting   */
 	printStaffList( &myStaff, "ID-SORTED STAFF LIST" );
 
 	return 0; 
 }
 
 
-/* print one staff, which is pointed to by ps */ 
-void printStaff(staff_t *ps) {
-	fullName_t *pn= &ps->name;   /* see createStaffList for more comments */  
-	date_t *pd= &ps->start;
-	
-	printf("%-10s %-10s %04d   %02d/%02d/%02d    %6d\n",
-					pn->given, pn->family, ps->id,
-					pd->dd, pd->mm, pd->yy % 100, ps->salary );
-}
+/***********************  PART 1: INPUT STAFF LIST ************************/
 
 /* create a staff list by reading from stdin */
 void createStaffList( staffList_t *psl ) {
 	int i;
-  for (i=0; i<N_MAX; i++) {
-		staff_t *ps= &psl->ss[i];    /* ps, pn, pd are used here */
-		fullName_t *pn= &ps->name;   /*    for covenience !      */
-		date_t *pd= &ps->start;
-		if ( scanf("%s %s %d %d/%d/%d %d", 
-		           pn->given, pn->family, &ps->id, 
-							 &pd->dd, &pd->mm, &pd->yy, &ps->salary) != 7) {
-			break;
-			        /* note that if we haven't use pd (for example) we have
-							   to write &psl->ss[i].start.mm
-								 instead of              pd->mm  
-							*/
-		}
+	for (i=0; 
+		i<N_MAX && 
+		scanf("%s %s %d %d", psl->ss[i].name.given,   /* given name of i-th staff */
+							 psl->ss[i].name.family,
+							 &(psl->ss[i].id), 
+							 &(psl->ss[i].salary)      /* salary of i-th staff */
+		) == 4;
+		i++) {               /* empty loop body, can be just replaced with ; */
 	}
-	psl->n= i;
+	psl->n= i;			/* i now is number of staffs, we HAVE TO store it in psl->n */
 }
 
+
+/***********************  PART 2: PRINT STAFF LIST ************************/
+
+/* print one staff, which is pointed to by ps */ 
+void printStaff(staff_t *ps) {
+	fullName_t *pn= &ps->name;   /* using pn as a surrogate for a pointer to ps->name */  
+	
+	printf("%-10s %-10s %04d  %6d\n",
+					pn->given, pn->family, ps->id, ps->salary );
+								/* so ps->given is equivalent to (pn->name)->given */
+}
+
+/* print the whole staff list (after printing a title) */ 
 void printStaffList( staffList_t *psl, char *title ) {
 	int i;
 	/* first, print the title and the header lines   ---------------------  */
 	printf("      %s\n", title);
 	printf("The list currently has %d staff\n\n", psl->n);
-	printf("Given & Family Names   ID  DateCommenced Salary\n");
-	printf("--------------------  ---- ------------- ------\n");
+	printf("Given & Family Names   ID   Salary\n");
+	printf("--------------------  ----  ------\n");
 	/* then, wlks thru the array psl->ss[] and print staff by staff ------  */
-  for (i=0; i<psl->n; i++ ) {
+	for (i=0; i<psl->n; i++ ) {
 		printStaff( &psl->ss[i] );
 	}
 	printf("\n");
 }
 
-/* swap two staff  */
+
+/***********************  PART 4: SORTING ************************/
+
 void swap(staff_t *a, staff_t *b) {
 	staff_t tmp= *a;
 	*a= *b;
@@ -165,21 +168,18 @@ void swap(staff_t *a, staff_t *b) {
 }
 
 /* sort the array psl->ss[] in increasing order of id,
-   using selection sort 
+   using insertion sort 
 */
 void sortStaffList( staffList_t *psl) {
 	int n= psl->n;         /* for convenience, n= number of staff */
 	staff_t *a= psl->ss;
 	int i, j;
-	for (i=n-1; i>0; i--) {
-	  /* processing elements from a[0] to a[i] only */
-		int imax= 0;
-		for (j=1; j<=i; j++) {    /* find imax= index of largest id  */
-			if ( a[imax].id < a[j].id ) imax= j;
+	for (i=1; i<n; i++) {
+		/* insert a[i] into sorted a[0..i-1] so that a[0..i] becomes sorted */
+		for (j=i-1; j>=0 && a[j+1].id < a[j].id; j--) { 
+			/* here, a[j] and a[j+1] in wrong order, swap them!  */
+			swap( &a[j], &a[j+1]);
 		}
-
-    /* swap the largest element with the last element of a[0] to a[i] */
-		swap( &a[i], &a[imax]);   
 	}
 }
 
