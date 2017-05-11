@@ -61,36 +61,17 @@ int
 main(int argc, char *argv[]) {
 	staffList_t myStaff;
 
-	/* 1 ---------- creates the staff list myStaff  */
-	
-    /* 2 ---------- print the staff list myStaff    */  
- 
-    /* 3 ---------- sorts the staff list            */
-
+	/* 1 ---------- creates the staff list myStaff  
+	createStaffList() */
+    /* 2 ---------- print the staff list myStaff      
+	printStaffList()  */
+    /* 3 ---------- sorts the staff list            
+	sortStaffList()  */
 	/*4 ---------- print the staff list again, after sorting   */
 
 	return 0; 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-void createStaffList( staffList_t *psl );
-void printStaffList( staffList_t *psl, char *title );
-void sortStaffList( staffList_t *psl);
 
 /***********************  PART 1: INPUT STAFF LIST ************************/
 
