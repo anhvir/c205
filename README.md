@@ -2,8 +2,8 @@
 =======
 
 In addition to class exercies:
-  * Download this whole c205 directory by clicking **Clone or Download** --> **Download ZIP**, it will normally be downloaded to your **Downloads** directory
-  * Then copy the directory from **Downloads** to your working directory
+  * Download this whole **c205** directory by clicking **Clone or Download** --> **Download ZIP**, it will normally be downloaded to your **Downloads** directory
+  * Then copy the directory **c205** from **Downloads** to your working directory
   * Compile, run, and explore *guessNumber.c*, note that *explained_guessNumber.c* is the same as *guessNumber.c*, but also has heap of explainations
   * Repair and complete *equation.c*   
 
