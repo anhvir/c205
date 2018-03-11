@@ -10,8 +10,8 @@
     S=    1 + x/1! + x/2! + ... + x^n/n! + ...
 
 but, of course, not until infinity, just until the first value n that make ** | x^n/n! |  < 1e-6 **, ie to the precision of 1e-6. Explore the program, learn a bit about the **while** loop and using **#define#**. Change the program so that:
-     ** the precison become 1e-9
-     ** also output the number of steps the **while** loop executed.     
+     * the precison become **1e-9**
+     * also output the number of steps the **while** loop executed.     
  
 -------------------------------------------------------------
 by anhvir@gmail.com, for use in unimelb COMP20005 workshops.
