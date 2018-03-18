@@ -3,7 +3,10 @@
           NOT using the library function exp(),
           NOT using library math functions at all
   
-  Anh Vo, anhvir@gmail.com, for comp20005 unimelb
+  Anh Vo, anhvir@gmail.com, for comp20005 unimelb Workshop Week 4
+  TOPIC: lean to use the while loop
+  What's new: answering the questions posted in the previous version
+
 */
 
 /* DESIGN THOUGHTS:
@@ -71,20 +74,63 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 
-/* QUESTIONS:
+/* QUESTIONS & ANSWERS:
   1. Because I did add p at S in line 65, is that better
      to delete line 61?
+     NO, the purpose of line 61 is to keep the "loop invariant":
+         "p is i-th member, S is the sum until the i-th element, inclusively"
+     "loop invariant" is the thing we need to keep TRUE before entering the loop
+                      AND at the end of loop body (that is, just before line 65)\
+     In more details:
+       - just before line 62: i=0 and the loop invariant
+                              "p is i-th member, S is sum until i-th member"
+       - in line 63, i changed, so the loop invariant is no more correct
+       - line 64 and 65, in that order, make the loop invariant correct again
+       - at line 67, the loop invariant is still correct, but now |p|<EPSILON
+     So, we can see that our program is correct.  
+
   2. Can I swap the order of lines 63-65?
+     Of course not, based on question q discussion.
+
   3. When designing, I used S, why did I used s instead in the C program?
+     Oh no, we still can use S. But, as a rule for this course, we should not
+         use capital letters for variable names!
+ 
   4. Change program so that the precision become 1e-9 instead of 1e-6.
      (warning: you need to make change in more than one places!)
+     It seems that we need only to chnage line 45 to:
+        #define EPSILON 1e-9
+     (and now you can see a benefit of using EPSILON instead of 1e-6)
+     But be careful! When talking about 1e-9 we imply that we need high
+     precision (more than 7 significant digits). For that, float datatype 
+     does not suit anymore. We need to change all "float" variable to "double".
+
   5. Change the program so that it also outputs the number of time
      the while loop executed.
+     Not terribly difficult here, just print out the value of i.
+
   6. The condition:
         p > EPSILON || p < -EPSILON 
      is probably longer than needed:
        4a) can we just write p > EPSILON ?
-       4b) is there anyway to simplify that condition? 
+           NO, it's wrong if x<0
+       4b) is there anyway to simplify that condition?
+           YES, but we need to use a math function for absolute value.
+           That function is fabs, and is defined in math.h, and implemented
+           in math library. So in our program we need:
+           #include <math.h>
+           and chnage the abve condition to:
+               fabs(p) > EPSILON
+
+           And, for some old compiler, you need to compile with:
+              gcc -Wall -o e2x e2x.c -lm
+           where flag "-lm" specifies the math library (m for math).
+           But note that many modern compilers don't require that, and it's
+           ok if you write or don't write -lm
+
+       NOTEL if we use math functions, then we can just use 
+            s= exp(x);    
+       to compute s, and delete lines 58-66. OMG! 
 */   
 
 

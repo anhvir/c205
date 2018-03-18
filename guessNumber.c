@@ -1,9 +1,10 @@
-/* Anh Vo, anhvir@gmail.com, for unimelb.COMP20005.Workshop.Week2 */
+/* Anh Vo, anhvir@gmail.com, for unimelb.COMP20005.Workshop.Week4 */
 
 /* This program asks your name, greets you, and then
 	asks you to guess a number from 0 to 6,
 	the program will terminate only after you give
 	the right guess
+   NOTE: this topic is not important, you can skip if having no time
 */
 
 #include <stdio.h>
@@ -22,7 +23,23 @@ int main(int argc, char *argv[]) {
 	
 	/* greeting */ 
 	printf("Hi! My name's %s. \nWhat's your name? ", MY_NAME);
-	scanf("%s", name);
+	if (scanf("%[^\n]", name) != 1) {
+       printf("Please enter your name!\n");
+       exit(EXIT_FAILURE);
+    }
+        /* here, "%[^,]" means "get anything until first see \n
+                                and do not include that \n into the read data"
+        */
+        /* There are, of course, other ways to do 
+           but that's out of our story  
+        */
+        /* FINAL NOTE: it is supposed that the input
+                       name has less than MAX_NAME_LEN charaters
+           WHY: (not so important for us at this stage)
+        */
+           
+
+    /* no change made to the rest of this file */
 	printf("\nGreat, %s! Very nice to meet you!\n\n", name);
 	
 	/* get secret answer as a random number */
