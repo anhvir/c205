@@ -9,7 +9,7 @@ if you fully understood the quiz.
  
 -------------------------------------------------------------
 
-*Don't know how to use this git repository?* Just read this README.md and then decide if you want to download the repository into your computer. If yes, click on **Clone or download**, then **Download ZIP**, and the whole directory c205 will be donloaded in (normally) your **Downloads** directory.
+*Don't know how to use this git repository?* Just read this README.md and then decide if you want to download the repository into your computer. If yes, click on **Clone or download**, then **Download ZIP**, and the whole directory c205 will be downloaded into (normally) your **Downloads** directory.
 
 -------------------------------------------------------------
 
