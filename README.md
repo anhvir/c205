@@ -1,11 +1,19 @@
- c205 Week 05:
+ c205 Week 06:
 =======
 
-  No material for this week. Please use your time for reviewing chapters 1-5 and preparing for the MST. 
+For this week, we have 2 programs that introduce arrays. You should 
+use these programs only after finishing exercise 6.9. 
 
 
-HAPPY EASTER BREAK
-==================
+coin_change.c
+-------------
+A skeleton for an array-based solution to Exercise 6.9
+ Part 1 (ie not considering coins $1, $2). You need to implement 
+change_one_coin, try the program and understand it.
+
+array.c
+-------  
+Simple examples on using arrays.
 
 -------------------------------------------------------------
 
