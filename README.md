@@ -1,8 +1,7 @@
  c205 Week 07:
 =======
 
-For this week, we have 2 programs that introduce arrays. You should 
-use these programs only after finishing exercise 6.9. 
+For this week, main topics include structs and arrays of structs. 
 
 ass1_notes.pdf
 --------------

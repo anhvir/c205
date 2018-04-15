@@ -64,6 +64,7 @@ typedef /*START*/ struct {
 */   
 
 int read_students( student_t ss[] ); 
+void print_students( student_t ss[], int n );
 student_t best_student( student_t ss[], int n);
                   
 int main(int argc, char *argv[]) {
@@ -81,6 +82,7 @@ int main(int argc, char *argv[]) {
                     //  each is a struct of 3 components
 
 	n= read_students( students );
+	print_students(students, n);
 	s= best_student(students, n);  // note that we have to suply n here 
 	printf("The best student: id= %d  ATAR= %.2f\n", s.id, s.atar);
 	
@@ -98,6 +100,17 @@ int read_students( student_t ss[] ){
 	}
 	
 	return i;
+}
+
+/* print the list of n student records in array ss[]    */ 
+void print_students( student_t ss[], int n ){
+	int i;
+	printf("\n  STUDENT LIST \n");
+    printf(" ID  ATAR  YEAR\n");
+	for (i=0; i<n; i++) {
+         printf("%d %.2f %d\n", ss[i].id, ss[i].atar, ss[i].year);
+	}
+	printf("\n");
 }
 
 /* From the array ss[] of n students,

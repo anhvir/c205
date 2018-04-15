@@ -8,6 +8,8 @@
 		- compile and try the program
 		- implement points ****1**** and *****2*****  
 		- implement point ****3**** if you can
+
+    Note: NO CHANGE from last week
 */
 
 #include <stdio.h>

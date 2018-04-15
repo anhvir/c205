@@ -1,7 +1,13 @@
-/* coin_change.c : a skeleton, the first example of using arrays
+/* coin_change.c : Example of using arrays
                    based on exercise 6.9
                    
    anhvir@gmail.com. for unimelb COMP20005 workshop week 6
+
+   COMPARED WITH LAST WEEK's VERSION:
+      - full implementation
+	  - use 200 and 100 coins
+      - rounding to nearest five
+      - printing in try_one_coin instead of in print_change 
 */
 
 /* INTRODUCTION TO ARRAY: 
@@ -50,10 +56,25 @@ int main(int argc, char *argv[]) {
 }
 
 int try_one_coin(int *cents, int coin) {
-	printf("try_one_coin not yet implemented, do it now!\n");
-	exit(EXIT_FAILURE);
+	int count= 0;
+	while ( *cents >= coin ) {
+		printf("%d", coin);
+		*cents -= coin;
+		count++;
+		if (*cents >0) {
+			printf(", ");
+		} else {
+			printf("\n");
+		}
+	}
+	return count;
 }
 
+
+/* rounding to nearest five */
+int rounding(int n) {
+	return (n+2)/5*5;
+}
 
 /* print_change will print changes for the amount "cents"
    LOGIC:
@@ -66,22 +87,16 @@ int try_one_coin(int *cents, int coin) {
    Try to understand the code below:
 */ 
 void print_change(int cents) {
-	int coins[N_COINS]= {50, 20, 10, 5, 2, 1};
+	int coins[N_COINS]= {200, 100, 50, 20, 10, 5};
 	/* here we declared and initialized value for coins[],
        note that we need to use { and } in initializing array values */
-	int i, j, ncoins;
+	int i, j;
 	printf("The chnages for %d cents are:\n", cents);
+	cents= rounding(cents);
 	for (i=0; i<N_COINS; i++ ) {
 		/* now coins[i] is the coin we consider, starting from coins[0]
            with is 50  */
-		ncoins= try_one_coin(&cents, coins[i]); /* dealing with coins[i] */
-		/* now print "ncoins" apperances of "coins[i]" */
-		for (j=0; j<ncoins; j++) {
-			printf("%d", coins[i]);
-			if (j<ncoins-1 || cents>0) {  /* print "," when needed */
-				printf(", ");
-			} 
-		}
+		try_one_coin(&cents, coins[i]); /* dealing with coins[i] */
 	}
 	printf("\n");
 }
