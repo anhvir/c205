@@ -34,7 +34,7 @@
    starting year at uni, and many other components.
    Then, it would be much more covenient if we can pack all of the
    above components into one object, and hence when refer to student
-   "a" we can have actually have each of these coponents.
+   "a" we can have actually have each of these components.
 
    HOW? We will employ "typedef" of course.
    In this example, we will define a datatype callled "student_t" that
@@ -42,7 +42,7 @@
    and year of joining the university.
 */   
 
-#define N 10   
+#define MAX_N 10   
 typedef int integer;    // now "integer" is defined
 
 typedef /*START*/ struct {
@@ -55,8 +55,8 @@ typedef /*START*/ struct {
          is the description of our new datatype. You can see that the
          "struct {" and "}" are the formal things we have to write,
          and the other things are just description of components.
-         And "student_t" is the neme of our new datatype.
-         We say that "student_t" is a "structure", or "struct" type. 
+         And "student_t" is the name of our new datatype.
+         We say that "student_t" is of "structure", or "struct" type. 
  
    Note 2: C gurus often use suffix "_t" to denote "type", that's
            why we employ "student_t"
@@ -77,8 +77,8 @@ int main(int argc, char *argv[]) {
                     The dot operator "." is used to access a component 
                     of struct. */
 
-    student_t students[N];
-                    // "students" is an array of N elements,
+    student_t students[MAX_N];
+                    // "students" is an array of MAX_N elements,
                     //  each is a struct of 3 components
 
 	n= read_students( students );
@@ -89,12 +89,12 @@ int main(int argc, char *argv[]) {
 	return 0;
 }
 
-/* reads a list of at most N student records, and store them in the
+/* reads a list of at most MAX_N student records, and store them in the
    array "s", returns number of students read    */ 
 int read_students( student_t ss[] ){
 	int i;
 	for (i=0;
-         i<N && scanf("%d %f %d", &ss[i].id, &ss[i].atar, &ss[i].year)==3;
+         i<MAX_N && scanf("%d %f %d", &ss[i].id, &ss[i].atar, &ss[i].year)==3;
          i++ ) {
 		 /* note that the loop body is empty */
 	}
