@@ -32,18 +32,20 @@
    WHY? Imagine that we need to process a number of student records,
    and each student record can include stdudent ID, name, ATAR score,
    starting year at uni, and many other components.
-   Then, it would be much more covenient if we can pack all of the
-   above components into one object, and hence when refer to student
-   "a" we can have actually have each of these components.
+   Then, it would be much more convenient if we can pack all of the
+   above components into one object, and hence when refer to a student
+   "a" we can actually have each of these components.
 
    HOW? We will employ "typedef" of course.
-   In this example, we will define a datatype callled "student_t" that
+   In this example, we will define a datatype called "student_t" that
    have (for simplicity, only) 3 components: student ID, ATAR score,
    and year of joining the university.
 */   
 
 #define MAX_N 10   
 typedef int integer;    // now "integer" is defined
+                        // the definition is global because
+                        //   it is outside of any function
 
 typedef /*START*/ struct {
    int id;        // student's id
