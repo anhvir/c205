@@ -1,36 +1,15 @@
-c205 Week 08:
+c205 Week 11:
 =======
 
-For this week, main topics include structs and arrays of structs. 
-(Please come to the workshop for the materials)
-
+mydiff.c
+--------
+A (very good) program to compare the ouputs for assigments...
 
 ass1.c
 ------
 My "submission" for assignment 1.
 While it's not perfect, you can view it as a sample solution.
 
-e89_skeleton.c and e89.data
----------------------------
-Skeleton and input data for a simplified version of exercise 8.9.
-You can use it to do the implementation of e8.9 in around 10 min.
-
-e89_finished.c
---------------
-A full implementation of the simplified e8.9, with heap of explanation.
-You should have a look at that only if you find that you still have
-some problems with using structs.
-
-You can gcc, and then run this program with:
-
-e89_finished < ./e89.data  
-
-
-09_C205_18S1.pdf
---------------
-Slides used in the previous workshop, it contains some materials
-on representation of numbers in computers. It might be useful
-if you missed the previous workshop.
 
 -------------------------------------------------------------
 
