@@ -10,6 +10,9 @@ ass1.c
 My "submission" for assignment 1.
 While it's not perfect, you can view it as a sample solution.
 
+other files from week 9
+------------------------
+still here :-)
 
 -------------------------------------------------------------
 
