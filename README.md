@@ -1,18 +1,7 @@
-c205 Week 11:
+c205 Week 12:
 =======
 
-mydiff.c
---------
-A (very good) program to compare the ouputs for assigments...
-
-ass1.c
-------
-My "submission" for assignment 1.
-While it's not perfect, you can view it as a sample solution.
-
-other files from week 9
-------------------------
-still here :-)
+No material this week. Use your time to explore sample exam papers...
 
 -------------------------------------------------------------
 
