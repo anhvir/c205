@@ -4,8 +4,9 @@
 Instructions for today's lab
 ----------------------------
 1. Open a new tab in your browser, navigate to the LMS page of comp20005
+
 Command | Explaination
------ | ----
+------- | ------------
 cd h: | make your H: driver be "current" 
 
 1. Implement Exercise 1.2: Edit, save, compile, and run **helloworld.c**. For that, follow the steps in **LMS** --> **Working with jEdit and gcc**
