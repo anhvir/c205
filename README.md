@@ -6,7 +6,7 @@ Instructions  today's lab
 1. Open a new tab in your browser (say, Chrome), navigate to the LMS page of comp20005
 1. Click on **LMS** --> **Working with jEdit and gcc**, and follow the instructions for "Write and run your program in the MSE lab". 
 Hints: You should resize and re-arrange the windows so that at the same time
-you can fully see both Chrome and minGW windows, AND see both jEdit and minGW windows.
+you can fully see both Chrome and minGW windows, and when in need, see both jEdit and minGW windows.
 1. In the minGW window try the folloing commands. You will need to use thesecommand very frequently. 
 
 Command | Explaination and notes
@@ -24,13 +24,13 @@ ls           | you will see that there is no content. You will place all files o
 Then
 ----
 1. Implement Exercise 1.2: Edit, save, compile, and run **helloworld.c**. For that, follow the steps in **LMS** --> **Working with jEdit and gcc**
-1. Implement exercise 2.8. If you still don't have a copy of the textbook, you can click on    
+1. Implement exercise 2.8. If you still don't have a copy of the textbook, you can click on the link **Week2_exercises** above    
 1. Implement exercise 2.4. A quick way is to use the skeleton e24.c by
    1. Click on **e24.c** above
    1. Copy the content of that **e24.c** and paste into your **jEdit** window
    1. Save as **H:/Projects/comp20005/Week2/e24.c**
    1. Complete and test your **e24.c** 
-   1. Follow the advise below
+1. Follow the advise below
 
 
 The best way of using the material in this github site
@@ -39,7 +39,7 @@ The best way of using the material in this github site
   * Then copy the directory **c205** from **Downloads** to your working directory, i.e. to under H:/Projects/comp20005/Week2/
   * Compile, run, and explore *guessNumber.c*, have some fun
   * Note that *explained_guessNumber.c* is the same as *guessNumber.c*, but also has heap of explainations, but don't try hard to understand everything 
-  * Repair and complete *equation.c* if you haven't done that  
+  * Repair and complete *equation.c* if you haven't done so 
 
 Important Homework
 -----------------
