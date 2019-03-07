@@ -24,7 +24,7 @@ ls           | you will see that there is no content. You will place all files o
 Then
 ----
 1. Implement Exercise 1.2: Edit, save, compile, and run **helloworld.c**. For that, follow the steps in **LMS** --> **Working with jEdit and gcc**
-1. Implement exercise 2.8. If you still don't have a copy of the textbook, you can click on the link **Week2_exercises** above    
+1. Implement exercise 2.8. If you still don't have a copy of the textbook, you can click on the link **Week2_exercises.pdf** above    
 1. Implement exercise 2.4. A quick way is to use the skeleton e24.c by
    1. Click on **e24.c** above
    1. Copy the content of that **e24.c** and paste into your **jEdit** window
