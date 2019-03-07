@@ -3,7 +3,9 @@
 
 Instructions for today's lab
 ----------------------------
-1. Open a new tab in your browser, navigate to the LMS page of comp20005
+1. Open a new tab in your browser (say, Chrome), navigate to the LMS page of comp20005
+2. Click on **LMS** --> **Working with jEdit and gcc**, and follow the instructions for "Write and run your program in the MSE lab". 
+Hints: You should resize and re-arrange the windows so that at the same time you can see both C 
 
 Command | Explaination and notes
 ------- | ------------
@@ -23,8 +25,8 @@ ls           | you will see that there is no content. You will place all files o
 1. Implement exercise 2.4. A quick way is to use the skeleton e24.c by
    1. Click on **e24.c** above
    1. Copy the content of that **e24.c** and paste into your **jEdit** window
-   1. Save as **H:/Projects/comp20005/Week2/e2.4.c**
-   1. Complete and test your **e2.4.c** 
+   1. Save as **H:/Projects/comp20005/Week2/e24.c**
+   1. Complete and test your **e24.c** 
    1. Follow the advise below
 
 
