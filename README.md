@@ -3,8 +3,8 @@
 
 Instructions for today's lab
 ----------------------------
-* Open a new tab in your browser, navigate to the LMS page of comp20005
-* Follow the steps in [LMS] -->   
+1. Open a new tab in your browser, navigate to the LMS page of comp20005
+1. Follow the steps in [LMS] -->   
 
 
 
