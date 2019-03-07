@@ -4,8 +4,13 @@
 Instructions for today's lab
 ----------------------------
 1. Open a new tab in your browser, navigate to the LMS page of comp20005
-1. Follow the steps in [LMS] -->   
-
+1. Implement Exercise 1.2: Edit, save, compile, and run **helloworld.c**. For that, follow the steps in **LMS** --> **Working with jEdit and gcc**
+1. Implement exercise 2.8. If you still don't have a copy of the textbook, you can click on    
+1. Implement exercise 2.4. A quick way is to use the skeleton e24.c by
+  2. Click on **e24.c** above
+  2. Copy the content of that **e24.c** and paste into your **jEdit** window
+  2. Save as **H:/Projects/comp20005/Week2/e2.4.c**
+  2. Complete and test your **e2.4.c** 
 
 
 In addition to class exercies:
