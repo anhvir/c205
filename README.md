@@ -5,9 +5,18 @@ Instructions for today's lab
 ----------------------------
 1. Open a new tab in your browser, navigate to the LMS page of comp20005
 
-Command | Explaination
+Command | Explaination and notes
 ------- | ------------
-cd h: | make your H: driver be "current" 
+cd h: | make your H: driver be the "current working folder" (CWF)
+ls    | display content of CWF
+mkdir Projects | make a new folder named "Projects"
+cd Projects | change CWF to "Project", only type "cd P" the <tab>
+mkdir comp20005 | make a new folder
+cd comp20005 | change CWF, remember to employ <tab>
+mkdir Week2  | make a new folder 
+cd Week2     |
+ls           | you will see that there is no content. You will place all files of this week in this folder.
+ 
 
 1. Implement Exercise 1.2: Edit, save, compile, and run **helloworld.c**. For that, follow the steps in **LMS** --> **Working with jEdit and gcc**
 1. Implement exercise 2.8. If you still don't have a copy of the textbook, you can click on    
