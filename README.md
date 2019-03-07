@@ -8,9 +8,9 @@ Instructions for today's lab
 1. Implement exercise 2.8. If you still don't have a copy of the textbook, you can click on    
 1. Implement exercise 2.4. A quick way is to use the skeleton e24.c by
    1. Click on **e24.c** above
-  1. Copy the content of that **e24.c** and paste into your **jEdit** window
-  1. Save as **H:/Projects/comp20005/Week2/e2.4.c**
-  1. Complete and test your **e2.4.c** 
+   1. Copy the content of that **e24.c** and paste into your **jEdit** window
+   1. Save as **H:/Projects/comp20005/Week2/e2.4.c**
+   1. Complete and test your **e2.4.c** 
 
 
 In addition to class exercies:
