@@ -1,11 +1,13 @@
  c205 Week 02:
 =======
 
-Instructions for today's lab
+Instructions  today's lab
 ----------------------------
 1. Open a new tab in your browser (say, Chrome), navigate to the LMS page of comp20005
-2. Click on **LMS** --> **Working with jEdit and gcc**, and follow the instructions for "Write and run your program in the MSE lab". 
-Hints: You should resize and re-arrange the windows so that at the same time you can see both C 
+1. Click on **LMS** --> **Working with jEdit and gcc**, and follow the instructions for "Write and run your program in the MSE lab". 
+Hints: You should resize and re-arrange the windows so that at the same time
+you can fully see both Chrome and minGW windows, AND see both jEdit and minGW windows.
+1. In the minGW window try the folloing commands. You will need to use thesecommand very frequently. 
 
 Command | Explaination and notes
 ------- | ------------
@@ -19,7 +21,8 @@ mkdir Week2  | make a new folder
 cd Week2     |
 ls           | you will see that there is no content. You will place all files of this week in this folder.
  
-
+Then
+----
 1. Implement Exercise 1.2: Edit, save, compile, and run **helloworld.c**. For that, follow the steps in **LMS** --> **Working with jEdit and gcc**
 1. Implement exercise 2.8. If you still don't have a copy of the textbook, you can click on    
 1. Implement exercise 2.4. A quick way is to use the skeleton e24.c by
@@ -40,8 +43,15 @@ The best way of using the material in this github site
 
 Important Homework
 -----------------
-1. If you haven't installed minGW/jEdit on your laptop, do it at home ASAP and within this week. Instruction for installation is available at **LMS** --> **Working with jEdit and gcc** 
-2. 
+1. If you haven't installed minGW/jEdit on your laptop, do it at home ASAP and within this week. Instruction for installation is available at **LMS** --> **Working with jEdit and gcc** --> **installing jEdit and gcc on your own computer** 
+1. IMPORTANT NOTE: When installing minGW (in step 3 of the above mentioned instruction, when the dialog box appears), scroll down to find and mark the item "msys-openssh bin" for installation.
+1. Now, if you are inside uni, you can use your laptop and connect to uni's computer dimefox (see instructions in 
+**LMS** --    > **Working with jEdit and gcc** --> **Compiling and running programs on dimefox**
+1. However, if you work from home, to be able to do step 3, you must first run VPN. If you don't know what and/or how, please ask Google. A simple query like "VPN unimelb" should help.
+
+
+
+
 
 -------------------------------------------------------------
 by anhvir@gmail.com, for use in unimelb COMP20005 workshops.
