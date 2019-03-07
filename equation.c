@@ -15,14 +15,17 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]) { 
-    float a, b, x;    
+	float a, b, x;    
 
+	/* Step 1: input data */
 	scanf(&a);
 	scanf("%f", b);
 
+	/* Step 2: Computation */
 	x= -b/a;
 
-	printf("Solution x= %.2d\n", x);
+	/* Step 3: output solution */
+	printf("Solution for %.2fx + %.2f = 0 is x= %.2f\n", a, b, x);
    
 	return 0;
 }

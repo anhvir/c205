@@ -7,7 +7,7 @@ Instructions for today's lab
 1. Click on **LMS** --> **Working with jEdit and gcc**, and follow the instructions for "Write and run your program in the MSE lab". 
 Hints: You should resize and re-arrange the windows so that at the same time
 you can fully see both Chrome and minGW windows, and when in need, see both jEdit and minGW windows.
-1. In the minGW window try the folloing commands. You will need to use these command very frequently. 
+1. In the minGW window try the folloing commands. You will need to use these commands (there are only three of them: cd, ls, mkdir) very frequently. 
 
 Command | Explaination and notes
 ------- | ------------
@@ -47,7 +47,7 @@ Important Homework
 1. IMPORTANT NOTE: When installing minGW (in step 3 of the above mentioned instruction, when the dialog box appears), scroll down to find and mark the item "msys-openssh bin" for installation.
 1. Now, if you are inside uni, you can use your laptop and connect to uni's computer dimefox (see instructions in 
 **LMS** --    > **Working with jEdit and gcc** --> **Compiling and running programs on dimefox**
-1. However, if you work from home, to be able to do step 3, you must first run VPN. If you don't know what and/or how, please ask Google. A simple query like "VPN unimelb" should help.
+1. However, if you work from home, to be able to do step 3, you must first run VPN. If you don't know what and/or how, please ask Google. A simple query like "VPN unimelb" could be a good start.
 
 
 
