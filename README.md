@@ -1,13 +1,13 @@
  c205 Week 02:
 =======
 
-Instructions  today's lab
+Instructions for today's lab
 ----------------------------
 1. Open a new tab in your browser (say, Chrome), navigate to the LMS page of comp20005
 1. Click on **LMS** --> **Working with jEdit and gcc**, and follow the instructions for "Write and run your program in the MSE lab". 
 Hints: You should resize and re-arrange the windows so that at the same time
 you can fully see both Chrome and minGW windows, and when in need, see both jEdit and minGW windows.
-1. In the minGW window try the folloing commands. You will need to use thesecommand very frequently. 
+1. In the minGW window try the folloing commands. You will need to use these command very frequently. 
 
 Command | Explaination and notes
 ------- | ------------
