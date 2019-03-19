@@ -18,7 +18,6 @@ int main(int argc, char *argv[]) {
 	printf("FINDING MIN AND MAX OF THREE NUMBERS\n\n");
 	printf("Enter 3 real numbers: ");
 
-#define XXX 3
 	// In the next line, replace XXX with a needed value!
 	if ( scanf("%lf %lf %lf", &a, &b, &c) != XXX) {
 		printf("Invalid input. Please try again.\n");
