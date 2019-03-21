@@ -1,0 +1,20 @@
+/* this is the content of Figure 4.10 in Page 55,
+   Feel free to copy and paste into your program if you want so
+*/
+	int n, isprime, divisor;	
+
+
+	/* a value for n has been read */
+	isprime = 1;
+	for (divisor=2; divisor*divisor <= n; divisor++) {
+		if (n % divisor == 0) {
+			isprime = 0;
+			break;
+		}
+	}
+	if  (isprime == 1) {
+		printf (“%d is a prime number\n”,n);
+	} else {
+		printf(“%d = %d * %d\n”,n, divisor, divisor);
+	}
+

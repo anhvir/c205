@@ -1,15 +1,9 @@
- c205 Week 03:
+ c205 Week 04:
 =======
-The tasks today:
-  * Mandatory task: implement ex. 3.6, then ask one of the tutors for any possible improvement. Still don't have textbook? Click on `book_exercises.pdf` but note that you have to rely on textbook from next workshop.
-  * Another task: implement ex 3.7. Read the task, and at first ask yourself: How many input data are needed? How many output data? What is the data type for each of them?
-  * Still confused with `scanf`? Use file `scanf_test.c` to play a bit (by running it with some odd data and try to understand the output).
-  * Implement a program that prints out the minimal and maximal value of 3 real numbers. To save your time, use the supplied file min_max.c as a starting point. 
-  * `equation2.c` is an unfinished program to solve equation ax+b=0. Change it so that:
-    * It can be compiled without any warnings/errors
-    * It also works when one of, or both, `a` and `b` receive zero value
-  * Still have time? Use equation2.c as a starting point, implement a program that prints out all real solutions of quadratic equation `ax^2 + bx + c = 0` (this problem is the same as Exercise 3.3).
+  * `quiz.c` let you redo the quiz we did today! Compile and run it, and you can test if you can redo the quiz correctly.
+  * `e2x.c` is a program to compute e^x which heap of comments and questions and answers. Just skim it. I hope that you will spend only one minute to read it and then say: "Rubbish, I knew all of these things!".
 
+ 
 ------------------------------------------------------
 HOWTO download this repository to your computer:
 
