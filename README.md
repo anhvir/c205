@@ -1,4 +1,4 @@
- c205 Week 05-06:
+ c205 Week 06:
 =======
 
  * **e6.9.c** : solution for **Ex 3.9**, served as a starting point for **Ex 6.9.** 
