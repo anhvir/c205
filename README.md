@@ -1,9 +1,7 @@
  c205 Week 05-06:
 =======
 
-  No additional material for this week, sorry.
- Please use your extra time for reviewing and preparing for the MST. 
-
+ * **e6.9.c** : solution for **Ex 3.9**, served as a starting point for **Ex 6.9.** 
 
 
 -------------------------------------------------------------
