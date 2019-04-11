@@ -8,7 +8,7 @@ finish Stage 1 today.
 Additional files:
 ---------------- 
 
-  * `ass1_notes.pdf` :
+  * `ass1_notes.pdf` : 
 Notes and advices on assignments 1, including the submission process.
 
   * `array.c` :
