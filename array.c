@@ -17,25 +17,32 @@
 
 #define N 20
 
-void buildArray(int a[], int n); 
-void printArray(char *title, int *a, int n);
+int readArray(int a[]); 
+void printArray(char *title, int a[], int n);
 int sum(int a[], int n); 
+void ins_sort(int a[], int n);
 
 int
 main(int argc, char *argv[]) {
 	int a[N];
+	int n;
 
-	buildArray(a, N);
-	printArray("Original array", a, N);
+	n= readArray(a);
+	printArray("Original array", a, n);
 
 	/* ****1**** */
     /* squareArray(a, N); */    
     /* YOU HAVE TO WRITE function squareArray
 		that chang each element of array to
 		its squared value, and call it here   */
-	printArray("New array", a, N);
+	printArray("New array", a, n);
 
-    printf("sum of array elements= %d\n", sum(a, N));
+    printf("sum of array elements= %d\n", sum(a, n));
+
+    printf("\n SORTING:\n");
+	ins_sort(a,n);
+	printArray("\nSorted array:", a, n);
+
 
 	/* ****2**** */
 	/* printf("sum of even elements of array= %d\n", sumEven(A, n); */
@@ -48,21 +55,21 @@ main(int argc, char *argv[]) {
 	return 0;
 }
 
-/* fill in array a[n] with random values from 1 to 20 
-   (note the way array name a and value n are declared in function header)
+
+/* reads array from stdin  
+   returns the number of elements in the array
 */ 
-void buildArray(int a[], int n) {  
+int readArray(int a[]) {  
 	int i;
-	for (i=0; i<n; i++) {
-		a[i]= rand()%20 + 1;  /* rand() returns a random integer */ 
-	}
+	for (i=0; i<N && scanf("%d", &a[i])==1; i++);  /* empty body */
+	return i;
 }
 
 
 /* print out the array after printing a title,
    Note that here "int *a" is another way for writing "int a[]"
 */  
-void printArray(char *title, int *a, int n) {
+void printArray(char *title, int a[], int n) {
 	int i;
 	printf("%s: ", title);
 	for (i=0; i<n; i++) printf ("%3d", a[i]);
@@ -77,3 +84,40 @@ int sum(int a[], int n) {
 	}
 	return sum;
 }
+
+
+
+
+
+/* swapping values of two integer locations
+*/
+void swap(int *pa, int *pb) {
+	int t= *pa;
+	*pa= *pb;
+	*pb= t;
+}
+
+/* sorting elements of a[] in increasing order
+   using insertion sort    
+*/	
+void ins_sort(int a[], int n){
+	int i, j;
+	for (i=1; i<n; i++) {  /* perform n-1 rounds  			*/     
+		/* in round i, insert a[i] to the sorted a[0..i-1] 	*/
+		/*             so that a[0..i] becomes sorted       */ 
+		for (j=i-1; j>=0 && a[j] > a[j+1]; j--) {
+			swap( &a[j+1], &a[j] );
+		}
+
+		/* the following 5 lines just print out interim results
+		   and make no change to the arry or the sorting process
+		   of course, these lines should be removed from the final code	*/
+		printf ("Step %2d: ",i);
+		for (j=0; j<=i; j++) printf(" %2d", a[j]);
+		printf("  ||  ");
+		for (   ; j<n; j++) printf(" %2d", a[j]);
+		printf("\n");
+
+	}
+}
+
