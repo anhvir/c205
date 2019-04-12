@@ -14,6 +14,8 @@ Notes and advices on assignments 1, including the submission process.
   * `array.c` :
 Simple examples on using arrays, can be used as skeleton for exercises 7.3 and 7.4.
 
+  * `array_int.txt` : a data file of 20 integers
+
   * `structs.c and students.txt`: **Warning:** This is an example of using
 structs and arrays of structs. You do **not** need to use structs 
 to complete your assignment, **no rewards** for attempting structs.
