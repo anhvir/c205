@@ -37,9 +37,22 @@ int main(int argc, char *argv[]) {
 
 	};
 	int n= 10;  /* number of strings in the above array */
+	int i,j;
+	/* Prints input strings */
+	printf("*****Input strings:*****\n");
+	for (i=0; i<n; i++) {
+		printf("%s\n",ss[i]);
+	}
 
 	/* TASK 1: Find all anagram pair from the set of strings in ss */
-
+	printf("\n******Anagram Pairs are:*******\n");
+	for (i=0; i<n; i++) {
+		for (j=i+1; j<n; j++) {
+			if (is_anagram(ss[i],ss[j])) {
+				printf("\"%s\" and \"%s\"\n", ss[i], ss[j]);
+			}
+		}
+	}
 
 	/* TASK 2 (chalenging): print only the maximal set of anagrams */
 
@@ -50,6 +63,7 @@ int main(int argc, char *argv[]) {
    note: the function will NOT change the input string a and b
 */ 
 int is_anagram(char* a, char* b) {
-
+	// IMPLEMENT ME!
+	printf("is_anagram not yet implemented. Do It First!\n");
 	return 0;
 }
