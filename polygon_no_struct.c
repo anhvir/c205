@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
 
 int read_poly(double X[], double Y[]) {
 	int i, n;
-    scanf("%d", &n);
+	scanf("%d", &n);
 	for (i=0; i<n && scanf("%lf %lf", &X[i], &Y[i])==2 ; i++);
 	return n;
 }
