@@ -22,9 +22,10 @@ int main(int argc, char *argv[]) {
 }  
 
 int read_poly(double X[], double Y[]) {
-	int i;
-	for (i=0; i<MAX_N && scanf("%lf %lf", &X[i], &Y[i])==2 ; i++);
-	return i;
+	int i, n;
+    scanf("%d", &n);
+	for (i=0; i<n && scanf("%lf %lf", &X[i], &Y[i])==2 ; i++);
+	return n;
 }
 
 
