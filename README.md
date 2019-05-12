@@ -1,12 +1,20 @@
  c205 Week 03:
 =======
 The tasks today:
+-----------------
   * Work on assignment 2. For starting, make sure to copy the skeleton from the FAQ, sign it, and save it as your first draff of assignemnt2.c. It's not too ambitious to have a goal of `finishing stage 1 and get 9 marks` today!
   * But, make sure that you understand the task fully. If in doubt, ask questions.
   * Alternatively, you can do one or both tasks listed below. 
   * Task 1: implement `ex. 8.9` or a simplified version of it. For a simplified version, you can use the attached skeleton `e89_skeleton.c` as the start. Or, if you want just to have a quick check, have a look as solution `e89_finished.c`.  
   * Task 2: use struct to implement polygons in exercises `8.2-8.4`. Note that `polygon_no_struct.c` provided in this site is an array-based and incoplete version for this task. That `polygon_no_struct.c` is just a solution to an in-class workshop exercise we did about 3 weeks ago.
 
+The supplied files:
+------------------
+  * `e89_skeleton.c` is a skeleton for a simplified version of exercise 8.9
+  * `e89_finished.c` is a solution for the above skeleton, with heap of (hepefully unnecessary) comments.
+  * `e89_data.txt` is a sample data set for `e89_finished.c`. You can try with `./e89_finished < e89_data.txt`
+  * `polygon_no_struct.c` is a solution to our past class exercise, which represents a polygon as a pair of array and a buddy variable `n`.
+  * `polygon_data.txt` is a sample data set for the polygon program above. Usage: `./polygon_no_struct < polygon_data.txt` 
 ------------------------------------------------------
 HOWTO download this repository to your computer:
 
