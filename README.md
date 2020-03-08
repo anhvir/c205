@@ -25,7 +25,7 @@ The best way of using this page with `grok`
 
 The best way to use this page with `jEdit`/`minGW`
 --------------------------------------------------
-  * Download this whole **c205** directory by clicking **Clone or Download** --> **Download ZIP**, it will normally be downloaded to your **Downloads** directory
+  * Download this whole `**c205**` directory by clicking **`Clone or Download`** --> **Download ZIP**, it will normally be downloaded to your **Downloads** directory
   * Then copy the directory **c205** from **Downloads** to your working directory
   * Now use `jEdit` and `gcc` to edit and try the program (if you haven't 
 installed jEdit/gcc in your laptop, do it at home and try at home)
