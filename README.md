@@ -5,10 +5,10 @@ Instructions for today's lab
 ----------------------------
 1. Open a new tab in your browser and login into grok --> comp20005  
 1. Do exercise 1.02 (heloworld). If you don't see the exercise, click on the symbol on the left of "Instructions", then choose "Exercise 1.02" under "W02 Week 2 Workshop". To do exercise 1.02:
-  2. Type your program on the right window
-  2. Click on "Run" to run the program
-  2. If you see error messages, try to understand and fix it, then go back to the previous step
-  2. If your program runs, click on "Mark" to have the program marked automaticall, then continue to edit/run/mark until getting the correct output.
+   1. Type your program on the right window
+   1. Click on "Run" to run the program
+   1. If you see error messages, try to understand and fix it, then go back to the previous step
+   1. If your program runs, click on "Mark" to have the program marked automaticall, then continue to edit/run/mark until getting the correct output.
 1. If you still have difficulty in using grok, have a look at Canvas --> Working with grok, jEdit, and gcc --> Guide to Using grok
 1. Do exercise 2.08 
 1. Do exercise 2.04. A quick way is to use the skeleton e24.c by
