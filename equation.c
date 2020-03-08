@@ -15,17 +15,19 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]) { 
-	float a, b, x;    
+	double a, b, x;    
+
+	printf("=========== Solving equation ax + b = 0 ==========\n");
 
 	/* Step 1: input data */
-	scanf(&a);
-	scanf("%f", b);
+	printf("Enter value for a, b: "); 
+	scanf(a, b);
 
 	/* Step 2: Computation */
 	x= -b/a;
 
 	/* Step 3: output solution */
-	printf("Solution for %.2fx + %.2f = 0 is x= %.2f\n", a, b, x);
+	printf("Solution for %.2lfx + %.2lf = 0 is x= %.2f\n", a, b, x);
    
 	return 0;
 }

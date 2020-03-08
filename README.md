@@ -3,34 +3,19 @@
 
 Instructions for today's lab
 ----------------------------
-1. Open a new tab in your browser (say, Chrome), navigate to the LMS page of comp20005
-1. Click on **LMS** --> **Working with jEdit and gcc**, and follow the instructions for "Write and run your program in the MSE lab". 
-Hints: You should resize and re-arrange the windows so that at the same time
-you can fully see both Chrome and minGW windows, and when in need, see both jEdit and minGW windows.
-1. In the minGW window try the folloing commands. You will need to use these commands (there are only three of them: cd, ls, mkdir) very frequently. 
-
-Command | Explaination and notes
-------- | ------------
-`cd h:` | make your H: driver be the "current working folder" (CWF)
-`ls`    | display content of CWF
-mkdir Projects | make a new folder named "Projects"
-cd Projects | change CWF to "Project", only type "cd P" the <tab>
-mkdir comp20005 | make a new folder
-cd comp20005 | change CWF, remember to employ <tab>
-mkdir Week2  | make a new folder 
-cd Week2     |
-ls           | you will see that there is no content. You will place all files of this week in this folder.
- 
-Then
-----
-1. Implement Exercise 1.2: Edit, save, compile, and run **helloworld.c**. For that, follow the steps in **LMS** --> **Working with jEdit and gcc**
-1. Implement exercise 2.8. If you still don't have a copy of the textbook, you can click on the link **Week2_exercises.pdf** above. Advice: Buy the book ASAP, it's a good investment :smile: 
-1. Implement exercise 2.4. A quick way is to use the skeleton e24.c by
+1. Open a new tab in your browser and login into grok --> comp20005  
+1. Do exercise 1.02 (heloworld). If you don't see the exercise, click on the symbol on the left of "Instructions", then choose "Exercise 1.02" under "W02 Week 2 Workshop". To do exercise 1.02:
+  2. Type your program on the right window
+  2. Click on "Run" to run the program
+  2. If you see error messages, try to understand and fix it, then go back to the previous step
+  2. If your program runs, click on "Mark" to have the program marked automaticall, then continue to edit/run/mark until getting the correct output.
+1. If you still have difficulty in using grok, have a look at Canvas --> Working with grok, jEdit, and gcc --> Guide to Using grok
+1. Do exercise 2.08 
+1. Do exercise 2.04. A quick way is to use the skeleton e24.c by
    1. Click on **e24.c** above
-   1. Copy the content of that **e24.c** and paste into your **jEdit** window
-   1. Save as **H:/Projects/comp20005/Week2/e24.c**
-   1. Complete and test your **e24.c** 
-1. Follow the advise below
+   1. Copy the content of that **e24.c** and paste into your program window
+   1. Complete and test the program 
+1. Try 
 
 
 The best way of using the material in this github site
@@ -43,12 +28,8 @@ The best way of using the material in this github site
 
 Important Homework
 -----------------
-1. If you haven't installed minGW/jEdit on your laptop, do it at home ASAP and within this week. Instruction for installation is available at **LMS** --> **Working with jEdit and gcc** --> **installing jEdit and gcc on your own computer** 
-1. IMPORTANT NOTE: When installing minGW (in step 3 of the above mentioned instruction, when the dialog box appears), scroll down to find and mark the item "msys-openssh bin" for installation.
-1. Now, if you are inside uni, you can use your laptop and connect to uni's computer dimefox (see instructions in 
-**LMS** --    > **Working with jEdit and gcc** --> **Compiling and running programs on dimefox**
-1. However, if you work from home, to be able to do step 3, you must first run VPN. If you don't know what and/or how, please ask Google. A simple query like "VPN unimelb" could be a good start.
-
+1. If you haven't installed minGW/jEdit on your laptop, do it at home ASAP and within this week. Instruction for installation is available in Canvas: 
+Canvas -->  Working with grok, jEdit, and gcc --> Install gcc and jEdit on Your Own Computer
 
 
 
