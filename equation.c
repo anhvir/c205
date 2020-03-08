@@ -15,7 +15,8 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]) { 
-	double a, b, x;    
+	int a, b;
+	double x;    
 
 	printf("=========== Solving equation ax + b = 0 ==========\n");
 
@@ -27,7 +28,7 @@ int main(int argc, char *argv[]) {
 	x= -b/a;
 
 	/* Step 3: output solution */
-	printf("Solution for %.2lfx + %.2lf = 0 is x= %.2f\n", a, b, x);
+	printf("Solution for %dx + %d = 0 is x= %.2f\n", a, b, x);
    
 	return 0;
 }
