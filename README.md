@@ -3,9 +3,9 @@
 
 If you don't know how to use `grok`
 ---------------------------------
-1. Open a new tab in your browser and login into `grok` --> `comp20005`  
+1. Open a new tab in your browser and login into `grok` --> `COMP20005 2020 S1` --> `Continue  
 1. Do exercise 1.02 (heloworld). If you don't see the exercise, click on the symbol on the left of `Instructions`, then choose `Exercise 1.02` under `W02 Week 2 Workshop`. You will see the problem 1.02 in the left windows. To do exercise 1.02:
-   1. Type your program on the right window
+   1. Type your program in the program (the top right) window
    1. Click on `Run` to run your program
    1. If you see any error message, try to understand and fix it, then go back to the previous step
    1. If your program runs, click on `Mark` to have the program marked automatically, then continue to edit/run/mark until getting the correct output.
@@ -17,9 +17,9 @@ If you don't know how to use `grok`
 
 The best way of using this page with `grok`
 --------------------------------------------
-  * Click on individual .c file, such as guessNumber.c
-  * Then, when you see the content of the file, click on Raw
-  * Now, you are seeing the text version of the file, copy it using Ctrl-A then Ctrl-C
+  * Click on individual .c file, such as `guessNumber.c`
+  * Then, you see the content of the file, but don't use it because it comes with some formating stuffs we don't want. Instead, click on `Raw`
+  * Now, you are seeing the text version of the file, copy it to clipboard using `Ctrl-A` then `Ctrl-C`
   * Paste the copied content to the PlayGround of `grok`
   * Run, mark, modify, rerun, ... 
 
@@ -36,7 +36,7 @@ Important Homework
 -----------------
 1. If you haven't installed minGW/jEdit on your laptop, do it at home ASAP and within this week. Instruction for installation is available in Canvas: 
 `Canvas` -->  `Working with grok, jEdit, and gcc` --> `Install gcc and jEdit on Your Own Computer`
-
+1. Remember: `grok` is a web interface, and you cannot use it offline. In addition, `grok` probably does not support full functionality of a programming environment. You will need `jEdit`/`gcc`. You will need them for the comimg assignments. Install them today!
 
 
 
