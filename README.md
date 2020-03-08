@@ -3,7 +3,7 @@
 
 If you don't know how to use `grok`
 ---------------------------------
-1. Open a new tab in your browser and login into `**grok**` --> `**COMP20005 2020 S1**` --> `**Continue**`  
+1. Open a new tab in your browser and login into **`grok`** --> `**COMP20005 2020 S1**` --> `**Continue**`  
 1. Do exercise 1.02 (heloworld). If you don't see the exercise, click on the symbol on the left of `**Instructions**`, then choose `**Exercise 1.02**` under `**W02 Week 2 Workshop**`. You will see the problem 1.02 in the left windows. To do exercise 1.02:
    1. Type your program in the program (the top right) window
    1. Click on `**Run**` to run your program
