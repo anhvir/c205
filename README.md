@@ -1,46 +1,35 @@
- c205 Week 02: Start your lab with login into `grok` and do the exercises there first.
+ c205 Week 03 Lab
 =======
+Main tasks: 
+----------- 
+The following tasks are available in **`grok`**, and could be coveniently implemented
+using **`grok`**. You are encouraged to implement them using **`jEdit/gcc`**.
+  * Implement ex. 3.6, then ask one of the tutors for any possible improvement. 
+  * Implement ex 3.7. Read the task, and at first ask yourself: How many input data are needed? How many output data? What is the data type for each of them?
 
-If you don't know how to use `grok`
----------------------------------
-1. Open a new tab in your browser and login into **`grok`** --> **`COMP20005 2020 S1`** --> **`Continue`**  
-1. Do exercise 1.02 (heloworld). If you don't see the exercise, click on the symbol on the left of **`Instructions`**, then choose **`Exercise 1.02`** under **`W02 Week 2 Workshop`**. You will see the problem 1.02 in the left windows. To do exercise 1.02:
-   1. Type your program in the program (the top right) window
-   1. Click on **`Run`** to run your program
-   1. If you see any error message, try to understand and fix it, then go back to the previous step
-   1. If your program runs, click on **`Mark`** to have the program marked automatically, then continue to edit/run/mark until getting the correct output.
-1. If you still have difficulty in using **`grok`**, ask for help, or have a look at **`Canvas`** --> **`Working with grok, jEdit, and gcc`** --> **`Guide to Using grok`**
-1. Do exercise 2.08 
-1. Do exercise 2.04. 
-1. Try **`guessNumber.c`**, then **`explained_guessNumber.c`**
-1. **NEW:** **`02_C205_20S1.pdf`**: slides used in the workshops this week
+Additional Tasks
+----------------
+  * *unserstanding* **`scanf:`** Use file **`scanf_test.c`** to play a bit (by running it with suggested or some odd inputs and try to understand the output).
+  * Implement a program that prints out the minimal and maximal value of 3 real numbers. To save your time, use the supplied file min_max.c as a starting point. 
+  * **`equation2.c`** is an unfinished program to solve equation ax+b=0. Change it so that:
+    * It can be compiled without any warnings/errors
+    * It also works when one of, or both, `a` and `b` receive zero value
+  * Still have time? Use **`equation2.c`** as a starting point, implement a program that prints out all real solutions of quadratic equation `ax^2 + bx + c = 0` (this problem is the same as Exercise 3.3).
+  * Try other exercises in Chapter 3 of the text book.
 
-The best way of using this page with **`grok`**
---------------------------------------------
-  * Click on individual .c file, such as **`guessNumber.c`**
-  * Then, you see the content of the file, but don't use it because it comes with some formating stuffs we don't want. Instead, click on **`Raw`**
-  * Now, you are seeing the text-only version of the file, copy it to clipboard using `Ctrl-A` then `Ctrl-C`
-  * Paste the copied content to the **`PlayGround`** of **`grok`**
-  * Run, mark, modify, rerun, ... 
+------------------------------------------------------
+HOWTO download this repository to your computer (for use with **`jEdit/gcc`**:
 
-The best way to use this page with **`jEdit`**/**`gc`c**
---------------------------------------------------
-  * Download this whole **`c205`** directory by clicking **`Clone or Download`** --> **`Download ZIP`**, it will normally be downloaded to your `Downloads` directory
-  * Then copy the directory `**c205**` from `**Downloads**` to your working directory
-  * Now use **`jEdit`** and **`gcc`** to edit and try the program (if you haven't 
-installed **`jEdit/gcc`** in your laptop, do it at home and try at home)
-  * Note that **`explained_guessNumber.c`** is the same as **`guessNumber.c`**, but also has heap of explainations, but don't try hard to understand everything 
-  * Repair and complete **`equation.c`** if you haven't done so 
+If you just want a single file, say, `prog.c`:
+  * Click on `prog.c` and you will see its content 
+  * Copy the content and paste into your jEdit/editor window, then save it in your working folder
 
-Important Homework
------------------
-1. If you haven't installed **`minGW/jEdit`** on your laptop, do it at home ASAP and within this week. Instruction for installation is available in Canvas: 
-**`Canvas`** -->  **`Working with grok, jEdit, and gcc`** --> **`Install gcc and jEdit on Your Own Computer`**
-1. Remember: **`grok`** is a web interface, and you cannot use it offline. In addition, **`grok`** probably does not support full functionality of a programming environment. As a professional, you will need **`jEdit/gcc`**. You will need them for the comimg assignments. Install them today!
-
-
-
+If you want to download the whole directory:
+  * Download this whole directory by clicking `Clone or Download` --> `Download ZIP`, it will normally be downloaded to your `Downloads` folder under the name `c205-master` or `c205-master.ZIP`
+  * Then copy or move the folder `c205-master` from `Downloads` to under your working folder
+  * If the downloaded `c205-master` has the extension `.ZIP`, you likely need to expand the zipped file with command `unzip c205-master.ZIP`. If the command doesn't work, ask Google how to unzip.
+ 
 -------------------------------------------------------------
-by anhvir@gmail.com, for use in unimelb COMP20005 workshops.
+by avo@unimelb.edu.au, for use in unimelb COMP20005 workshops.
 
 For a teaching week, a new content is (normally) uploaded at the very beginning of the week, and that content is removed one week later.
