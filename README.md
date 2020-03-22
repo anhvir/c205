@@ -5,14 +5,14 @@ Main Tasks:
   * Do all exercises in `grok`, in cluding extra exercises in `W4E`
   
 
-Additional Tasks:
+Additional Tasks (in decreasing order of importance):
 -------------------
   * **quiz.c** let you redo the quiz we did today! Compile and run it, and you can test
 if you fully understood the quiz. Then explore it to see how it works.
 
   * **e2x.c** is a completed program to compute e^x, with heap of explanation. Run and explore it to see some decisions in designing the code. 
 
-  * **guessNumber.c** was revised for this week. It now can read a name containing more than 1 word. Just to understand a bit more about scanf.
+  * **guessNumber.c** was revised for this week. It now can read a name containing more than 1 word. Give it an 1-minute trial, just to understand a bit more about scanf.
 
  
 
