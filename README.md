@@ -1,7 +1,10 @@
  c205 Week 04
 =======
+Note for this Week 
+------------------
+Please note that all comp20005 workshops **will proceed as scheduled**
 
-Important Note for students of Anh's Monday 12:00 Workshop
+Important Notes for students of the Monday 12:00 Workshop
 ----------------------------------------------------------
 Please accept my apology: I ended the workshop by mistake, and that kicked
 all of you out. Then, despite of my attempts, I could not re-start the meeting. 
@@ -14,7 +17,7 @@ If you did not finish the workshop, please take one of the two options below:
     * Thu 12:00PM Workshop
   * Or, send me an email (to avo@unimelb.edu.au), and I will organize a special online session for you.
 
-But please note that we might face some further changes, and you need to check both Canvas and this site prior to coming to any (relevant) class. Thank you for your understanding. 
+
 
 Main Tasks:
 -------------
