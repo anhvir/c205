@@ -14,7 +14,7 @@ If you did not finish the workshop, please take one of the two options below:
   * For this week (and this week only), join one of my other online workshops. They include:
     * Tue 10:00AM Workshop W01/05
     * Wed 2:15PM  Workshop W01/07
-    * Thu 12:00PM Workshop
+    * Thu 12:00PM Workshop W01/16
   * Or, send me an email (to avo@unimelb.edu.au), and I will organize a special online session for you.
 
 
