@@ -11,8 +11,10 @@ If you did not finish the workshop, please take one of the two options below:
   * For this week (and this week only), join one of my other online workshops. They include:
     * Tue 10:00AM Workshop W01/05
     * Wed 2:15PM  Workshop W01/07
-    * Thu 12:00 Workshop
+    * Thu 12:00PM Workshop
   * Or, send me an email (to avo@unimelb.edu.au), and I will organize a special online session for you.
+
+But please note that we might face some further changes, and you need to check both Canvas and this site prior to coming to any (relevant) classes. Thank you for your understanding. 
 
 Main Tasks:
 -------------
