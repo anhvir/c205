@@ -1,5 +1,8 @@
  c205 Week 04
 =======
+Notes: Sorry everyone that attended the Monday 12:00 workshop. The meeting was ended by mistake and we could not restart it. I will soon put some notes here regarding what we should do.
+
+
 Main Tasks:
 -------------
   * Do all exercises in `grok`, in cluding extra exercises in `W4E`
