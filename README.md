@@ -1,10 +1,18 @@
  c205 Week 04
 =======
-Notes: Sorry everyone that attended the Monday 12:00 workshop.
-Please go back to Canvas and joind the 2nd meeting at 12:00. That meeting was just created!Thanks.
 
- The meeting was ended by mistake and we could not restart it. I will soon put some notes here regarding what we should do.
+Important Note for students of Anh's Monday 12:00 Workshop
+----------------------------------------------------------
+Please accept my apology: I ended the workshop by mistake, and that kicked
+all of you out. Then, despite of my attempts, I could not re-start the meeting. 
+At the end, Alistair managed to open a ne meeting for me to continue, but only a small number of studenst joined me that time, and that is understandable.
 
+If you did not finish the workshop, please take one of the two opition below:
+  * For this week (and this week only), join one of my other online workshops. They include:
+    * Tue 10:00AM Workshop W01/05
+    * Wed 2:15PM  Workshop W01/07
+    * Thu 12:00 Workshop
+  * Or, send me an email (to avo@unimelb.edu.au), and I will organize a special online session for you.
 
 Main Tasks:
 -------------
