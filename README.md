@@ -14,7 +14,7 @@ If you did not finish the workshop, please take one of the two options below:
     * Thu 12:00PM Workshop
   * Or, send me an email (to avo@unimelb.edu.au), and I will organize a special online session for you.
 
-But please note that we might face some further changes, and you need to check both Canvas and this site prior to coming to any (relevant) classes. Thank you for your understanding. 
+But please note that we might face some further changes, and you need to check both Canvas and this site prior to coming to any (relevant) class. Thank you for your understanding. 
 
 Main Tasks:
 -------------
