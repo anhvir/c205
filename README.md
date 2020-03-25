@@ -4,20 +4,10 @@ Note for this Week
 ------------------
 Please note that all comp20005 workshops **will proceed as scheduled**
 
-Important Notes for students of the Monday 12:00 Workshop
-----------------------------------------------------------
-Please accept my apology: I ended the workshop by mistake, and that kicked
-all of you out. Then, despite of my attempts, I could not re-start the meeting. 
-At the end, Alistair managed to open a new meeting for me, but only a few students joined me that time, and that is understandable.
-
-If you did not finish the workshop, please take one of the two options below:
-  * For this week (and this week only), join one of my other online workshops. They include:
-    * Tue 10:00AM Workshop W01/05
-    * Wed 2:15PM  Workshop W01/07
+If, by any reason, you could not join your scheduled workshop, please join my other workshop on Thursday:
     * Thu 12:00PM Workshop W01/16
-  * Or, send me an email (to avo@unimelb.edu.au), and I will organize a special online session for you.
 
-
+Note that there was a problem on Monday due to my fault, and a technical problem on Wed morning and afternoon. Now, Alistair have found a solution for that technical problem.
 
 Main Tasks:
 -------------
