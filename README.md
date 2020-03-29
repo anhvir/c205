@@ -5,7 +5,7 @@ Notes:
 To join Anh's online workshop/consultation:
    - Click [here](https://unimelb.zoom.us/j/2987998979)
    - Or, Open **Zoom** then **Join a meeting** and enter meeting ID
-298 799 8979  
+**298 799 8979**  
 
 Assignment will be likely released this week.
 During the 2 week break, Anh will open some Zoom sessions for
