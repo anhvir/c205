@@ -1,43 +1,75 @@
 /*
-  e2x.c : compute e^x to the precision of EPSILON= 1e-6,
-          NOT using the library function exp(),
-          NOT using library math functions at all
+  e2x.c : Write and test a function that
+          computes S= 1 + x + x^2/2! + x^3/3! + ... x^n/n!
+          where n>0 and is the largest one that satisfies:
+                    | x^n/n! | >= 10^(-6)
+          You should not use any functions from math library.
+          Note that n is NOT an input to this task.
+  
+  Note : The above requirement just means:
+         compute e^x with the precision of EPSILON= 1e-6,
+         
   
   Anh Vo, avo@unimelb.edu.au, for comp20005 unimelb Workshop Week 4
-  TOPIC: lean to use the while loop
+  TOPIC: learn to use the while loop
   What's new: answering the questions posted in the previous version
 
 */
 
-/* DESIGN THOUGHTS:
+/* DESIGN THOUGHTS for computing the sum
 We need to compute S= 1 + x + x^2/2! + x^3/3! + ...
-We cannot just use one one assignment for that, right?
-But we can:
-   - Start with, say, S= 0 
-   - add up one (appropriate) member, say p, to S
-How about:
-   - fisrt set p = 1, then p is the first member
-   - set S= p       , the the first member is accumulated to S
-and then we can REPEAT the following process:
-   - change p so that the new p equal to the next member
-   - add p to S
+That is:
+         S= p_0 + p_1 + p_2 + p_3 + ... + p_i + ...   
+     where   p_0= 1
+             p_1= x
+             p_2= x^2/2!
+             p_3= x^3/3!
+             ...
+             p_i= x^i/i!           
+             ...
+
+ 
+First idea:
+    
+   - start with S=0, i= 0, compute p= p_0
+     Now we can add p to S, but prior to that we need
+        to check that |p| >= EPSILON
+        and we know that that should be a start of a loop
+   - Organize the loop:
+     The body of the loop should include
+        + accumulate p to S
+        + change i to next i by i=i+1, 
+          now p became p_(i-1) becaused of changed i
+        + change p so that it become new p_i
+          and here is the end of loop body, 
+          because now we want to continue from "accumulate p to S"
+
 
 We refine and detail our above thought as follows:
-   p= 1;    // first member
-   S= 1;    // now S includes first member
-   loop:    // NOT forever, but stop when |p| < EPSILON
-      p=  (next member)   (***)
-      S= S + p;    // accumulate p to S
-   endloop
-   output S     
+   i= 0;
+   p= 1;    // p= p_0= p_i
+
+   while (???) {  // loop starts, ??? ==  true when |p| >= EPSILON
+      S= S + p;   // accumulate p (current p_i) to S
+      i++;        // advance i
+                  // then change p to ensure p= p_i 
+      p=  (next member p_i)   (***)
+   }             
+   output S;     
 
 Great! For the loop we can use the "while" statement.
 The only problem is (***). Look at the expression of S, when
 we move, say from p= x^2/2! to the next_p= x^3/3! we need
 just to multiply p with x/3, that is, next_p= p * x /3.
 
-How can we have that 3? Now, look at the whole C program below
-(There are some notes at the end of this file, don't ignore them)
+Math lovers: after "i++;", p is p_(i-1), so:
+      p =  x^(i-1) / (i-1)!
+and now we want p to be   x^i/i!
+that can be done ith
+      p = p * x / i;     
+
+Now, look at the whole C program below
+(There are some notes at the end of this file, don't just ignore them)
 */
 
 
@@ -47,69 +79,68 @@ How can we have that 3? Now, look at the whole C program below
 
 #define EPSILON 1e-6
 
+// function prototype, saying that the function has 1 double input
+//     and return a double as its result
+double e2x(double);  
+
 int main(int argc, char *argv[]) {
-    float s=0, x, p;
-    int i;
+    double x;
     
     // Part 1: input data
     printf("Computing e^x. Enter value for x: ");
-    if ( scanf("%f",&x) != 1 ) {
-        printf("Please rerun and enter a real number such as 1.2\n");
+    if ( scanf("%lf",&x) != 1 ) {
+        printf("Invalid input.\n"
+               "Please rerun and enter a real number such as 1.2\n");
         exit(EXIT_FAILURE);
     }
- 
-    // Part 2: process computing s= e^x
-    i= 0;
-    p= 1;   // now i=0 and the i-th member is x^0/0! ie 1
-    s= p;
-    while ( p > EPSILON || p < -EPSILON ) {  // while (|p| > EPSILON)
-        i= i+ 1;         // goto next member
-        p= p * x / i;    // check in your paper if this's correct
-        s= s+p;          // add i-th elements to S
-    }   
         
-    // Part 3: output result
-    printf("EPSILON= %f, e_to_x = %.6f\n", EPSILON, s);
+    // Part 2: compute & output result
+    printf("EPSILON= %f, x= %f, e_to_x = %.6f\n", EPSILON, x, e2x(x));
     
     return 0;
 }
 
-/* QUESTIONS & ANSWERS:
-  1. Because I did add p at S in line 65, is that better
-     to delete line 61?
-     NO, the purpose of line 61 is to keep the "loop invariant":
-         "p is i-th member, S is the sum until the i-th element, inclusively"
-     "loop invariant" is the thing we need to keep TRUE before entering the loop
-                      AND at the end of loop body (that is, just before line 65)\
-     In more details:
-       - just before line 62: i=0 and the loop invariant
-                              "p is i-th member, S is sum until i-th member"
-       - in line 63, i changed, so the loop invariant is no more correct
-       - line 64 and 65, in that order, make the loop invariant correct again
-       - at line 67, the loop invariant is still correct, but now |p|<EPSILON
-     So, we can see that our program is correct.  
+// function implementation
+double e2x(double x) {
+	double s=0;    // for output
+	double p;      // working variables
+    int i;
 
-  2. Can I swap the order of lines 63-65?
-     Of course not, based on question q discussion.
+    // process computing s= e^x
+    i= 0;
+    p= 1;   // now i=0 and the i-th member is x^0/0! ie 1
 
-  3. When designing, I used S, why did I used s instead in the C program?
-     Oh no, we still can use S. But, as a rule for this course, we should not
-         use capital letters for variable names!
+    while ( p >= EPSILON || p <= -EPSILON ) {  // while (|p| >= EPSILON)
+        s= s+p;          // add i-th elements to S
+        i= i + 1;        // goto next member
+        p= p * x / i;    // 
+    }  
  
-  4. Change program so that the precision become 1e-9 instead of 1e-6.
-     (warning: you need to make change in more than one places!)
-     It seems that we need only to chnage line 45 to:
-        #define EPSILON 1e-9
-     (and now you can see a benefit of using EPSILON instead of 1e-6)
-     But be careful! When talking about 1e-9 we imply that we need high
-     precision (more than 7 significant digits). For that, float datatype 
-     does not suit anymore. We need to change all "float" variable to "double".
+    return s;      // finish function by stating the output
+}
+ 
+/* NOTES:
 
-  5. Change the program so that it also outputs the number of time
-     the while loop executed.
-     Not terribly difficult here, just print out the value of i.
+  1. Can I swap the order of lines 114-116?
+     No, in general. The only possible swap is lines 114 and 115,
+                     but that technically-correct swap is not logical
+  
+  2. Lines 110-113 could be replaced by a signle line:
+     for (i=0, p=1; p>=EPSILON || p<=-EPSILON; ) {
+     // note the empty update
 
-  6. The condition:
+  3. The whole loop in lines 110-117 could be replaced by:
+
+     for (i=0, p=1; p>=EPSILON || p<=-EPSILON; i++, p *= (x/i) ) {
+         s += p;
+     }
+       
+  3. A bit ugly, but the whole loop in lines 110-117 could also be replaced by:
+
+     for (i=0, p=1; p>=EPSILON || p<=-EPSILON; s+=p, i++, p *= (x/i) );
+       
+  
+  4. The condition:
         p > EPSILON || p < -EPSILON 
      is probably longer than needed:
        4a) can we just write p > EPSILON ?
@@ -119,18 +150,17 @@ int main(int argc, char *argv[]) {
            That function is fabs, and is defined in math.h, and implemented
            in math library. So in our program we need:
            #include <math.h>
-           and chnage the abve condition to:
-               fabs(p) > EPSILON
+           and change the abve condition to:
+               fabs(p) >= EPSILON
 
-           And, for some old compiler, you need to compile with:
-              gcc -Wall -o e2x e2x.c -lm
-           where flag "-lm" specifies the math library (m for math).
-           But note that many modern compilers don't require that, and it's
-           ok if you write or don't write -lm
 
-       NOTEL if we use math functions, then we can just use 
+       NOTEL if we are allowed to use math functions, then we can just use 
             s= exp(x);    
-       to compute s, and delete lines 58-66. OMG! 
+       to compute s, and delete the implementation of e2x(). OMG! 
+
+  5. Is there any other way to write the above program?
+     Yes, of course, there are plenty of different ways...
+
 */   
 
 

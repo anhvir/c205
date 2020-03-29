@@ -1,4 +1,4 @@
-/* quiz used in Week 4 
+/* quiz used in Week 4, added the use of functions 
    by avo@unimelb.edu.au, for unimelb comp20005 Workshop Week 4
    
    note: not yet a great program,
@@ -8,11 +8,14 @@
 
 #include <stdio.h>
 
+// function prototypes
+void wait_answer(); 
+void wait_continue(); 
 
 int main() {
 	int i, j, c, s;
 
-	// ------------- PROCESSING 1 QUIZ -----------------
+	// ------------- PROCESSING NEXT QUIZ -----------------
 	// First, display the question 	
 	printf("\nQUIZ 2: What are the values of i, s, and c after the"
 		" following statement: \n"
@@ -20,11 +23,8 @@ int main() {
 "		s += i; \n"
 "		c++; \n"
 "	} \n" );
-
-	// Then, wait for users answering and pressing Enter
-	printf("\n Write your answer in draft paper, then\n");	
-	printf("              press Enter to see the correct answer ...");
-	while (getchar() != '\n');
+	// Next, wait for users answering and pressing Enter
+    wait_answer();
 
 	// Run the code to display the correct answer
 	for (s=0, i=0, c= 0; i<5; i++) {
@@ -32,13 +32,13 @@ int main() {
 		c++;
 	}
 	printf("s=%d, i= %d, c= %d\n", s, i, c);
-	printf("\nHope you got it right!\n");
-	printf("              press Enter to see the correct answer ...");
-	while (getchar() != '\n');
-	printf("\n");
+    // Last, wait until the user ready
+	wait_continue();
 
 
 	//---- The rest is just similar to the above ------------
+	// ------------- PROCESSING NEXT QUIZ -----------------
+
 	printf("\n\n QUIZ 3: what's the output of:\n"
 "	for (i=0; i<2; i++) { \n"
 "		for (j=0; j<3; j++) { \n"
@@ -46,22 +46,21 @@ int main() {
 "		} \n"
 "		printf(\"\\n\"); \n"
 "	}\n");
+	// Wait for users answering and pressing Enter
+    wait_answer();
 
-	printf("\n Write your answer in draft paper, then\n");	
-	printf("                 press Enter to see answer ...");
-	while (getchar() != '\n');
+    // Run code to display answer
 	for (i=0; i<2; i++) { 
 		for (j=0; j<3; j++) {
 			printf("%d ", i*j);
 		}
 		printf("\n");
 	}
-	printf("\nHope you got it right!\n");
-	printf("              press Enter to see the correct answer ...");
-	while (getchar() != '\n');
-	printf("\n");
+    // Last, wait until the user ready
+	wait_continue();
+
 		
-	// -------------------------------------------  
+	// ------------- PROCESSING NEXT QUIZ -----------------
 	printf("\n QUIZ 4: what's the output of:\n"
 "	for (i=0; i<5; i++) { \n"
 "		for (j=0; j<4; j++) { \n"
@@ -71,11 +70,10 @@ int main() {
 "		printf(\"\\n\");  \n"
 "		if (i==2) break; \n"
 "	} \n" );
-	
-	printf("\n Write your answer in draft paper, then\n");	
-	printf("                 press Enter to see answer ...");
-	while (getchar() != '\n');
-	
+	// Wait for users answering and pressing Enter
+    wait_answer();
+
+    // Run code to display answer
 	for (i=0; i<5; i++) { 
 		for (j=0; j<4; j++) {
 			if ( j >i ) continue;
@@ -84,13 +82,27 @@ int main() {
 		printf("\n");
 		if (i==2) break; 
 	}
-	printf("\nHope you got it right!\n");
-	printf("              press Enter to see the correct answer ...");
-	while (getchar() != '\n');
-	printf("\n");
+    // Last, wait until the user ready
+	wait_continue();
 
 	printf("\nTHE END\n\n");
 	return 0;
 }
 
+// Implementation of functions
+
+// Wait for users answering and pressing Enter
+void wait_answer() {
+	printf("\n Write your answer in draft paper, then\n");	
+	printf("              press Enter to see the correct answer ...");
+	while (getchar() != '\n');
+}
+
+// Wait for users being ready and pressing Enter
+void wait_continue() {
+	printf("\nHope you got it right!\n");
+	printf("              press Enter to continue ...");
+	while (getchar() != '\n');
+	printf("\n");
+}
 

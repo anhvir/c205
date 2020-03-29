@@ -1,27 +1,26 @@
- c205 Week 04
+ c205 Week 05
 =======
-Note for this Week 
-------------------
-Please note that all comp20005 workshops **will proceed as scheduled**
+Notes:
+--------
+Assignment will be likely released this week.
+During the 2 week break, Anh will open some Zoom sessions for
+consultation. Please watch this place for planned time slots.
 
-If, by any reason, you could not join your scheduled workshop, please join my other workshop on Thursday:
-    * Thu 12:00PM Workshop W01/16
-
-Note that there was a problem on Monday due to my fault, and a technical problem on Wed morning and afternoon. Now, Alistair have found a solution for that technical problem.
-
-Main Tasks:
+Main Tasks this week:
 -------------
-  * Do all exercises in `grok`, in including extra exercises in `W4E`
-  
+  * Do all exercises in `grok`, W5, then W4 (with additinal requirement of using functions when possible), then W5X and W4X (with using functions).
 
-Additional Tasks (in decreasing order of importance):
+
+
+Additional Tasks:
 -------------------
-  * **quiz.c** let you redo the quiz we did today! Compile and run it, and you can test
-if you fully understood the quiz. Then explore it to see how it works.
+The following files have been changed from last week:
+  * **quiz.c** let you redo the quiz week 4! 
+In comparison with last week, the program was
+rewritten using functions.
 
   * **e2x.c** is a completed program to compute e^x, with heap of explanation. Run and explore it to see some decisions in designing the code. 
-
-  * **guessNumber.c** was revised for this week. It now can read a name containing more than 1 word. Give it an 1-minute trial, just to understand a bit more about scanf.
+   Again, the program has been rewritten with using functions.
 
  
 
@@ -30,7 +29,7 @@ HOWTO download this repository to your computer:
 
 If you just want a single file, say, `e2x.c`:
   * Click `e2x.c` and you will see its markup content
-  * Click `Raw` to get the corresponding text-only content 
+  * Click `Raw` to get the coresponding text-only content 
   * Copy the content and paste into your grok/jEdit window
 
 
