@@ -3,7 +3,7 @@
 Notes:
 --------
 Anh's online workshops:
-   * This week (30/03-06/04): Tue 10AM-12AM, Wed 2:15PM-4:15PM, Thu 12PM-2PM  
+   * This week (30/03-06/04), as scheduled in Canvas: Tue 10AM-12AM, Wed 2:15PM-4:15PM, Thu 12PM-2PM  
    * To join, click [here](https://unimelb.zoom.us/j/2987998979)
    * or, open **Zoom** then **Join a meeting** and enter meeting ID
 **298 799 8979**  
