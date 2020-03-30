@@ -2,24 +2,25 @@
 =======
 Notes:
 --------
-To join Anh's online workshop/consultation:
-   - Click [here](https://unimelb.zoom.us/j/2987998979)
-   - Or, Open **Zoom** then **Join a meeting** and enter meeting ID
+Anh's online workshops:
+   * This week (30/03-06/04): Tue 10AM-12AM, Wed 2:15PM-4:15PM, Thu 12PM-2PM  
+   * To join, click [here](https://unimelb.zoom.us/j/2987998979)
+   * or, open **Zoom** then **Join a meeting** and enter meeting ID
 **298 799 8979**  
 
-Assignment will be likely released this week.
-During the 2 week break, Anh will open some Zoom sessions for
+Assignment 1 will be likely released this week.
+During the 2 week break, Anh will open some Zoom/grok sessions for
 consultation. Please watch this place for planned time slots.
 
 Main Tasks this week:
 -------------
-  * Do all exercises in `grok`, W5, then W4 (with additinal requirement of using functions when possible), then W5X and W4X (with using functions).
+  * Do all exercises in `grok`, W5, then W4 (with additional requirement of using functions when possible), then W5X and W4X (with using functions).
 
 
 
-Additional Tasks:
--------------------
-The following files have been changed from last week:
+If the exercies seem too difficult, explore:
+--------------------------
+(note: the following files have been changed from last week):
   * **quiz.c** let you redo the quiz week 4! 
 In comparison with last week, the program was
 rewritten using functions.
