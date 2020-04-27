@@ -30,42 +30,4 @@ In this Case Study:
 
 #include <stdio.h>
 #include <stdlib.h>
-#define SIZE 1000
 
-
-typedef struct {
-	int stud;
-	int mark;
-} mark_t;
-int read_mark(mark_t A[]);
-void print_mark(mark_t A[], int n);
-
-
-int main(int argc, char *argv[]) {
-	mark_t A[SIZE];
-	int n= 0;
- 	n= read_mark(A);
- 	print_mark(A,n);  	
-	
-	return 0;
-}
-
-int read_mark(mark_t A[]) {
-	int i;
-	int stud, mark;
-	for (i=0; i<SIZE && scanf("%d %d", &stud, &mark)==2;  i++ ) {
-		A[i].stud = stud; 
-		A[i].mark = mark;
-	}
-	return i;
-}
-
-void print_mark(mark_t A[], int n) {
-	int i;
-	for (i=0; i<n; i++) {
-		printf("%7d %7d\n", A[i].stud, A[i].mark);
-	}
-}
-
-
-	
