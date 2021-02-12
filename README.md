@@ -1,10 +1,7 @@
-As this time, please note:
 
-  * Watch the coresponding lecture captures before attending online workshops.
+Not in a semester.
 
-  * **grok** is a good place for asking programming questions.
+-------------------------------------------------------------
+by avo@unimelb.edu.au, for use in unimelb COMP20005.
 
-  * You can also email Anh if you have questions.
-
-Happy Coding!
-
+For a teaching week, a new content is (normally) uploaded at the very beginning of the week, and that content is removed one week later.
