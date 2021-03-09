@@ -23,7 +23,7 @@ The best way of using this page with **`grok`**
   * Paste the copied content to the **`PlayGround`** of **`grok`**
   * Run, mark, modify, rerun, ... 
 
-The best way to use this page with **`jEdit`**/**`gc`c**
+The best way to use this page with **`jEdit`**/**`gcc`**
 --------------------------------------------------
   * Download this whole **`c205`** directory by clicking **`Clone or Download`** --> **`Download ZIP`**, it will normally be downloaded to your `Downloads` directory
   * Then copy the directory `**c205**` from `**Downloads**` to your working directory
