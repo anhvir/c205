@@ -14,7 +14,6 @@ and watch wokshop video 2 of this week in LMS.
 1. Do exercise 2.08 
 1. Do exercise 2.04. 
 1. Try [**`guessNumber.c`**](./gessNumber.c), then [**`explained_guessNumber.c`**](./explained_guessNumber.c)
-[//]: <> (1. **NEW:** **`02_C205_20S1.pdf`**: slides used in the workshops this week)
 
 The best way of using this page with **`grok`**
 --------------------------------------------
