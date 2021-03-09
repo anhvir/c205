@@ -38,7 +38,7 @@ int main(int argc, char *argv[]) {
 	guess = -1; 
 	while (guess != answer) {
 		printf ("Make a guess = ");
-		if (scanf("%d", &guess) != 1) {
+		while (scanf("%d", &guess) != 1) {
 			getchar();
 			continue;
 		}
