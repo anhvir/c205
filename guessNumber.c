@@ -38,7 +38,10 @@ int main(int argc, char *argv[]) {
 	guess = -1; 
 	while (guess != answer) {
 		printf ("Make a guess = ");
-		scanf("%d", &guess);
+		if (scanf("%d", &guess) != 1) {
+			getchar();
+			continue;
+		}
 		count= count + 1;
 	}
 	
