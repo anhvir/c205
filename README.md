@@ -9,11 +9,12 @@ If you don't know how to use `grok`
    1. Click on **`Run`** to run your program
    1. If you see any error message, try to understand and fix it, then go back to the previous step
    1. If your program runs, click on **`Mark`** to have the program marked automatically, then continue to edit/run/mark until getting the correct output.
-1. If you still have difficulty in using **`grok`**, ask for help, or have a look at **`Canvas`** --> **`Working with grok, jEdit, and gcc`** --> **`Guide to Using grok`**
+1. If you still have difficulty in using **`grok`**, ask for help,
+and watch wokshop video 2 of this week in LMS.
 1. Do exercise 2.08 
 1. Do exercise 2.04. 
-1. Try **`guessNumber.c`**, then **`explained_guessNumber.c`**
-1. **NEW:** **`02_C205_20S1.pdf`**: slides used in the workshops this week
+1. Try [**`guessNumber.c`**](./gessNumber.c), then [**`explained_guessNumber.c`**](./explained_guessNumber.c)
+[1. **NEW:** **`02_C205_20S1.pdf`**: slides used in the workshops this week]
 
 The best way of using this page with **`grok`**
 --------------------------------------------
