@@ -1,5 +1,13 @@
- c205 Week 02: Start your lab with login into `grok` and do the exercises there first.
+ c205 Week 02 Lab:
 =======
+1. Start your lab with login into `grok` and do the exercises in W3.
+
+1. Open `jEdit` and `minGW`, try at least one problem of **W3** using `jEdit` and `gcc`.
+
+1. Do grok exercises in **W3X**.
+
+1. Ask Anh for an additional, fun exercise.
+
 
 If you don't know how to use `grok`
 ---------------------------------
