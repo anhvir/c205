@@ -6,7 +6,7 @@
 
 1. Do grok exercises in **W3X**.
 
-1. Click [here](funny_ex.pdf) for an additional, funny exercise.
+1. Click [here](./funny_ex_03.pdf) for an additional, funny exercise.
 
 
 
