@@ -6,7 +6,7 @@
 
 1. Do grok exercises in **W3X**.
 
-1. Ask Anh for an additional, fun exercise.
+1. Click [here](./funny_ex.pdf) for an additional, funny exercise.
 
 
 
