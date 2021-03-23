@@ -32,7 +32,3 @@ If you want to download the whole directory:
   * Then copy or move the folder `c205-master` from `Downloads` to under your working folder
   * If the downloaded `c205-master` has the extension `.ZIP`, you likely need to expand the zipped file with command `unzip c205-master.ZIP`. If the command doesn't work, ask Google how to unzip.
  
--------------------------------------------------------------
-by avo@unimelb.edu.au, for use in unimelb COMP20005 workshops.
-
-For a teaching week, a new content is (normally) uploaded at the very beginning of the week, and that content is removed one week later.
