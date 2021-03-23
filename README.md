@@ -8,6 +8,8 @@
 
 1. Click [here](./quiz.c) for a version `.c` for running quiz. Note that 
 it's totally different from the one described last week.
+Actually,  **quiz.c** let you redo the quiz we did today! Compile and run it, and you can test
+if you fully understood the quiz. Then explore **quiz.c** to see how it works.
 
 
 
@@ -18,8 +20,6 @@ For a teaching week, a new content is (normally) uploaded at the very beginning 
 
 Additional Tasks (in decreasing order of importance):
 -------------------
-  * **quiz.c** let you redo the quiz we did today! Compile and run it, and you can test
-if you fully understood the quiz. Then explore it to see how it works.
 
 ------------------------------------------------------
 HOWTO download this repository to your computer:
