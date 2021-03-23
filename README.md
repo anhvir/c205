@@ -9,7 +9,7 @@
 1. Click [here](./quiz.c) for a version `.c` for running quiz. Note that 
 it's totally different from the one described last week.
 Actually,  **quiz.c** let you redo the quiz we did today! Compile and run it, and you can test
-if you fully understood the quiz. Then explore **quiz.c** to see how it works.
+if you fully understood the quiz. Then explore **quiz.c** to see how the program works.
 
 
 
@@ -17,9 +17,6 @@ if you fully understood the quiz. Then explore **quiz.c** to see how it works.
 by avo@unimelb.edu.au, for use in unimelb COMP20005 workshops.
 
 For a teaching week, a new content is (normally) uploaded at the very beginning of the week, and that content is removed one week later.
-
-Additional Tasks (in decreasing order of importance):
--------------------
 
 ------------------------------------------------------
 HOWTO download this repository to your computer:
