@@ -24,7 +24,7 @@ HOWTO download this repository to your computer:
 If you just want a single file, say, `quiz.c`:
   * Click `quiz.c` and you will see its markup content
   * Click `Raw` to get the corresponding text-only content 
-  * Copy the content and paste into your grok/jEdit window
+  * Copy the text-only content and paste into your grok/jEdit window
 
 
 If you want to download the whole directory:
