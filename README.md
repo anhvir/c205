@@ -1,10 +1,10 @@
  comp20005 Week 04 Lab:
 =======
-1. Do exercise 4.9 in `grok **W4**`
+1. Do exercise 4.9 in `grok W4`
 
-1. Do exercise 4.4 in `grok **W4**`
+1. Do exercise 4.4 in `grok W4`
 
-1. From the list in `grok **W4X**` do as many exercises as possible 
+1. From the list in `grok W4X` do as many exercises as possible 
 
 1. Click [here](./quiz.c) for a version `.c` for running quiz. Note that 
 it's totally different from the one described last week.
