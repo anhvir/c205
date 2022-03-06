@@ -1,34 +1,33 @@
-/*
+/*--------------------------------------------------------------------
    equation.c: solving equation ax + b = 0 where a, b are real numbers
-   Author: 
-     + Skeleton by Anh Vo, anhvir@gmail.com
-     + Final vesrion by: 
-   Last updated: 
-*/
+   Author: comp20005 students in the first programming workshop 
+   Last updated: MAR/2022 
 
-/* 
+ 
    Notes:
-     + This program might have errors and/or be incomplete
-     + Your task is to make it working nicely
-*/
+     + This program is under construction and might contain errors
+--------------------------------------------------------------------*/
  
 #include <stdio.h>
 
 int main(int argc, char *argv[]) { 
-	int a, b;
+
+
+	// Declarations
+	double a, b;
 	double x;    
 
 	printf("=========== Solving equation ax + b = 0 ==========\n");
 
-	/* Step 1: input data */
-	printf("Enter value for a, b: "); 
+	// Step 1: input data 
 	scanf(a, b);
 
-	/* Step 2: Computation */
+	// Step 2: Computation 
 	x= -b/a;
 
-	/* Step 3: output solution */
-	printf("Solution for %dx + %d = 0 is x= %.2f\n", a, b, x);
+	// Step 3: output solution 
+	printf("%f", a, b, x);
    
+	
 	return 0;
 }
