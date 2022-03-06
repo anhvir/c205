@@ -4,7 +4,7 @@
 If you don't know how to use `grok`
 ---------------------------------
 1. Open a new tab in your browser and login into **`grok`** --> **`COMP20005 2022 S1`** --> **`Continue`**  
-1. Do exercise 1.02 (heloworld). If you don't see the exercise, click on the symbol on the left of **`Instructions`**, then choose **`Exercise 1.02`** under **`C01 -Chapter1: Computers and Programs`**. Then, click on **`Exercise 1.02`*. To do exercise 1.02:
+1. Do exercise 1.02 (heloworld). If you don't see the exercise, click on the symbol on the left of **`Instructions`**, then choose **`Exercise 1.02`** under **`C01 -Chapter1: Computers and Programs`**. Then, click on **`Exercise 1.02`** and:
    1. Type your program in the program (the top right) window
    1. Click on **`Run`** to run your program
    1. If you see any error message, try to understand and fix it, then go back to the previous step
@@ -34,7 +34,7 @@ installed **`VSC/gcc`** in your laptop, do it at home and try at home)
 
 Important Homework
 -----------------
-1. If you haven't installed **`Visual Studio Code/jEdit`** on your laptop, do it at home ASAP and within this week. Instruction for installation is available in **LMS**: 
+1. If you haven't installed **`Visual Studio Code/gcc`** on your laptop, do it at home ASAP and within this week. Instruction for installation is available in **LMS**: 
 **`LMS`** --> **`Modules`** --> **`Working With Grok and ...`** --> **`Install gcc and Visual Studio on Your Own Computer`**
 1. Remember: **`grok`** is a web interface, and you cannot use it offline. In addition, **`grok`** probably does not support full functionality of a programming environment. As a professional, you'd better to also have **`VSC/gcc`**. Install them today!
 
