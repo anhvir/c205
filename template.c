@@ -1,9 +1,7 @@
 /*
-   A small skeleton for some illustrations 
-
+   Purpose:
    Author: 
-     + Skeleton by Anh Vo, anhvir@gmail.com
-     + Final vesrion by: <your name here>
+   Last Updated: 
 */
 
  
@@ -11,15 +9,9 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-	int i;
-	int n;
-	int x;
   
-    
 
  
-    // Output results 
-	printf("n = %d\n",n);
 
 	return 0;
 }
